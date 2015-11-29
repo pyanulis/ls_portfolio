@@ -1,0 +1,128 @@
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/*----------------------------------------------logo icons-----------------------------------------*/
+
+.sprite-logo {
+    width: 243px;
+    height: 42px;
+    background-position: -5px -194px;
+}
+
+/*----------------------------------------------social icons-----------------------------------------*/
+.sprite-ico_vk {
+    width: 47px;
+    height: 47px;
+    background-position: -165px -137px;
+}
+
+.sprite-ico_vk:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -233px -5px;
+}
+
+.sprite-ico_tw {
+    width: 47px;
+    height: 47px;
+    background-position: -51px -104px;
+}
+
+.sprite-ico_tw:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -108px -104px;
+}
+
+.sprite-ico_fb {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -5px;
+}
+
+.sprite-ico_fb:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -5px;
+}
+
+.sprite-ico_git {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -5px;
+}
+
+.sprite-ico_git:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -176px -5px;
+}
+
+/*----------------------------------------------menu icons-----------------------------------------*/
+
+.sprite-ico_mail {
+    margin-left: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+    width: 21px;
+    height: 16px;
+    background-position: -111px -62px;
+}
+
+.sprite-ico_phone {
+    margin-left: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+    width: 19px;
+    height: 21px;
+    background-position: -142px -62px;
+}
+
+.sprite-ico_skype {
+    margin-left: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+    width: 20px;
+    height: 20px;
+    background-position: -207px -62px;
+}
+
+/*----------------------------------------------content icons-----------------------------------------*/
+
+.sprite-ico_job {
+    width: 36px;
+    height: 34px;
+    background-position: -5px -62px;
+}
+
+.sprite-ico_school {
+    width: 26px;
+    height: 32px;
+    background-position: -171px -62px;
+}
+
+.sprite-ico_univer {
+    width: 42px;
+    height: 23px;
+    background-position: -165px -104px;
+}
+
+/*----------------------------------------------login icons-----------------------------------------*/
+
+.sprite-ico_login {
+    width: 20px;
+    height: 32px;
+    background-position: -51px -62px;
+}
+
+.sprite-ico_login_success {
+    width: 20px;
+    height: 32px;
+    background-position: -81px -62px;
+}

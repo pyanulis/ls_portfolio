@@ -1,0 +1,230 @@
+/*---------------------------------------------- common ----------------------------------------------*/
+.html {
+	height: 100%;
+}
+
+.body {
+	width: 100%;
+	height: 100%;
+}
+.wrapper {
+	margin: 0 auto;
+	min-height: 100%;
+	height: 100%;
+}
+.zeroMargin {
+    margin: 0px;
+    padding: 0px;
+}
+/*---------------------------------------------- header ----------------------------------------------*/
+
+.header {
+    background-color: #f0f4f7;
+    min-height: 117px;
+    height: auto;
+    padding: 0px;
+    width: auto;
+    min-width: 960px;
+    
+    vertical-align: middle;
+    
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #1c667a;
+}
+
+.spriteHeader {
+    margin: 35px 12px;
+    display: inline-block;
+}
+
+.logo {
+    float: left;
+    margin-left: 100px;
+    margin-top: 40px;
+    vertical-align: middle;
+}
+
+.lastHeaderBlock {
+    margin-right: 100px;
+}
+
+.socialBlock {
+    float: right; 
+    padding:0px;
+}
+
+/*---------------------------------------------- page content ----------------------------------------------*/
+
+.pageContent {
+    width: 960px;
+    margin: 40px auto 0px;
+}
+
+/*---------------------------------------------- menu ----------------------------------------------*/
+
+.menuBlock {
+    box-sizing: border-box;
+    width: 250px;
+    margin-bottom: 24px;
+}
+.menuItem {
+    color: #3ba8c0;
+    background-color: #f0f4f7;
+    display: block;
+    box-sizing: border-box;
+    height: 73px;
+}
+
+.menuItemSelected {
+    background-color: #3ba8c0;
+    color: white;
+}
+
+.menuItem:hover {
+    background-color: #48cbe8;
+    color: white;
+}
+
+.menuSeparator {
+    border-bottom: 2px solid #3ba8c0;
+}
+
+.menuItemContent {
+    margin: auto 0px;
+}
+
+.link {
+    display: block;
+    height: 100%;
+    padding-left: 28px;
+    padding-top: 29px;
+    color: inherit;
+}
+.link:link {
+    text-decoration: none;
+}
+
+.link:visited {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link:active {
+    text-decoration: underline;
+}
+
+/*---------------------------------------------- contacts ----------------------------------------------*/
+
+.contactItem {
+    color: white;
+    background-color: #41b9d4;
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.linkContact {
+    display: block;
+    height: 100%;
+    color: inherit;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 8px;
+}
+
+.linkContact:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.linkContact:active {
+    text-decoration: underline;
+}
+
+.contactItem {
+    display: block;
+    height: 40px;
+}
+
+.icoContact {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 11px;
+    margin-right: 20px;
+}
+
+.contactTitle {
+    background-color: #3ba8c0;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-top: 15px;
+}
+
+.contactMail {
+    background-color: #41b9d4;
+    vertical-align: middle;
+}
+
+.contactPhone {
+    background-color: #48cbe8;
+    vertical-align: middle;
+}
+
+.contactSkype {
+    background-color: #51daf8;
+    vertical-align: middle;
+}
+
+.contactText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contactText:hover {
+    text-decoration: underline;
+}
+
+/*---------------------------------------------- footer ----------------------------------------------*/
+
+.footer {
+	width: 100%;
+    min-width: 960px;
+	margin: -80px auto 0;
+	height: 80px;
+	background: #f0f4f7;
+	position: relative;
+    
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #1c667a;
+}
+
+/*---------------------------------------------- clear fix ----------------------------------------------*/
+
+.clearfix:after{
+    clear: both;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.menuItemFirst {
+    border-top: 1px solid transparent;
+    border-top-left-radius:  4px;
+    border-top-right-radius:  4px;
+}
+
+.menuItemLast {
+    border-bottom: 1px solid transparent;
+    border-bottom-left-radius:  4px;
+    border-bottom-right-radius:  4px;
+}
+
+
