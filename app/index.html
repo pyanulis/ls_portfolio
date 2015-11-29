@@ -5,7 +5,11 @@
     <title>Untitled Document</title>
     <link href="bower/normalize-css/normalize.css" rel="stylesheet" >
     <link href="css/icons.css" rel="stylesheet" >
+    <link href="fonts/fira/fira.css" rel="stylesheet" >
+    <link href="fonts/Proxima-Nova/ProximaNova.css" rel="stylesheet" >
+    <link href="css/text.css" rel="stylesheet" >
     <link href="css/main.css" rel="stylesheet" >
+    <link href="css/info_page.css" rel="stylesheet" >
 </head>
 <body class="body">
     <div class="wrapper">
@@ -23,7 +27,7 @@
         </header>
         
         <div class="pageContent">
-            <aside>
+            <aside class="aside">
                 <div class="zeroMargin menuBlock">
                     <ul class="zeroMargin">
                         <il class="menuItem menuItemFirst menuItemSelected"><a class="link" href="#me">Обо мне</a></il><!--
@@ -51,9 +55,40 @@
                         </il>
                     </ul>
                 </div>
-            </aside>
-            <main>
-                <section></section>
+            </aside><!--
+         --><main class="main">
+                <section class="infoBlock">
+                    <article class="article">
+                        <div class="articleTitle">
+                            <h2 class="h2">Основная информация</h2>
+                        </div>
+                        <figure class=" zeroMargin figurePhoto">
+                            <img src="images/photo.jpg" alt="photo" class="photo">
+                        </figure>
+                        <div class="descriptionInfo">
+                            <p class="descrItem"><span class="descrCaption">Меня зовут:</span>Павел Янулис</p>
+                            <p class="descrItem"><span class="descrCaption">Мой возраст:</span>30 лет</p>
+                            <p class="descrItem"><span class="descrCaption">Мой город:</span>Санкт-Петербург</p>
+                            <p class="descrItem"><span class="descrCaption">Моя специализация:</span>.NET, frontend разработчик</p>
+                            <div class="skillsCaption">
+                                <p class="descrCaption">Ключевые навыки:</p>
+                            </div>
+                            <div class="skillsList">
+                                <p class="skillItem">.net</p>
+                                <p class="skillItem">wcf</p>
+                                <p class="skillItem">wpf</p>
+                                <p class="skillItem">javascript</p>
+                                <p class="skillItem">css</p>
+                                <p class="skillItem">php</p>
+                                <p class="skillItem">html</p>
+                                <p class="skillItem">gulp</p>
+                                <p class="skillItem">bower</p>
+                                <p class="skillItem">git</p>
+                            </div>
+                            
+                        </div>
+                    </article>
+                </section>
                 <section></section>
                 <section></section>
             </main>
@@ -61,7 +96,7 @@
         
     </div>
     
-    <footer class="footer">Это мой сайт, пожайлуйста, не ворйте его.</footer>
+    <footer class="footer">Это мой сайт, пожайлуйста, не воруйте его.</footer>
 </body>
 <script src="bower/jquery/jquery.js"></script>
 <script src="js/main.js"></script>
