@@ -8,9 +8,13 @@
 	height: 100%;
 }
 .wrapper {
-	margin: 0 auto;
+	/*margin: 0 auto;
 	min-height: 100%;
 	height: 100%;
+    padding-bottom: 80px;*/
+    
+    position: relative; 
+    min-height: 100%;
 }
 .zeroMargin {
     margin: 0px;
@@ -59,7 +63,6 @@
 .pageContent {
     width: 960px;
     margin: 40px auto 0px;
-    background-color: dimgray;
 }
 
 .aside {
@@ -78,6 +81,8 @@
 .article {
     background-color: #eff3f7;
     border-radius: 3px;
+    margin-bottom: 25px;
+    padding-bottom: 40px;
 }
 
 .articleTitle {
@@ -105,6 +110,11 @@
     display: block;
     box-sizing: border-box;
     height: 73px;
+    
+    font-family: "fira-sansbook", sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: normal;
 }
 
 .menuItemSelected {
@@ -157,6 +167,11 @@
     display: block;
     box-sizing: border-box;
     height: 40px;
+    
+    font-family: "fira-sansbook", sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: normal;
 }
 
 .linkContact {
@@ -223,12 +238,16 @@
 /*---------------------------------------------- footer ----------------------------------------------*/
 
 .footer {
-	width: 100%;
+	/*width: 100%;
     min-width: 960px;
 	margin: -80px auto 0;
 	height: 80px;
 	background: #f0f4f7;
-	position: relative;
+	position: relative;*/
+    
+    min-width: 960px;
+	height: 80px;
+	background: #f0f4f7;
     
     border-top-width: 3px;
     border-top-style: solid;
@@ -256,4 +275,13 @@
     border-bottom: 1px solid transparent;
     border-bottom-left-radius:  4px;
     border-bottom-right-radius:  4px;
+}
+
+.footerP {
+    text-align: center;
+    line-height: 13px;
+    font-size: 13px;
+    font-family: "fira_sanslight", sans-serif;
+    color: #4a545d;
+    padding-top: 1%;
 }

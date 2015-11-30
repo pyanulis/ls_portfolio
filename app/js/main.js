@@ -1,4 +1,6 @@
 $(function(){
+    return;
+    
     console.log("js loaded");
     
     var classMenuSelected = "menuItemSelected";

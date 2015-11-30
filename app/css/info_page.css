@@ -46,3 +46,37 @@
     display: table-cell;
     max-width: 240px;
 }
+
+.jImage {
+    display: inline-block;
+    margin-right: 30px;
+    padding-left: 60px;
+    padding-top: 28px;
+}
+
+.jDescr {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    padding-top: 28px;
+}
+
+.jobName {
+    margin: 0px;
+    padding: 0px;
+    vertical-align: text-top;
+    font-family: "fira_sansmedium", sans-serif;
+    color: #37424d;
+    line-height: 17px;
+}
+
+.jobDate {
+    margin: 0px;
+    font-family: "fira_sansbook", sans-serif;
+    color: #37424d;
+    line-height: 15px;
+    font-size: 15px;
+}
+
+.edu_job_Figure {
+}

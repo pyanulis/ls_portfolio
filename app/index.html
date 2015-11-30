@@ -2,6 +2,7 @@
 <html class="html">
 <head>
     <meta charset="UTF-8">
+    <meta lang="ru-RU">
     <title>Untitled Document</title>
     <link href="bower/normalize-css/normalize.css" rel="stylesheet" >
     <link href="css/icons.css" rel="stylesheet" >
@@ -19,9 +20,9 @@
             </div>
             
             <div class="socialBlock">
-                <a href="https://facebook.com" alt="facebook" class="sprite spriteHeader sprite-ico_fb"></a><!--
-             --><a href="https://vk.com" alt="vk" class="sprite spriteHeader sprite-ico_vk"></a><!--
+                <a href="https://vk.com" alt="vk" class="sprite spriteHeader sprite-ico_vk"></a><!--
              --><a href="https://twitter.com" alt="twitter" class="sprite spriteHeader sprite-ico_tw" ></a><!--
+             --><a href="https://facebook.com" alt="facebook" class="sprite spriteHeader sprite-ico_fb"></a><!--
              --><a href="https://github.com" alt="git" class="sprite spriteHeader sprite-ico_git lastHeaderBlock"></a>
             </div>
         </header>
@@ -31,7 +32,7 @@
                 <div class="zeroMargin menuBlock">
                     <ul class="zeroMargin">
                         <il class="menuItem menuItemFirst menuItemSelected"><a class="link" href="#me">Обо мне</a></il><!--
-                     --><il class="menuItem menuSeparator"><a  class="link" href="#works">Мои работы</a></il><!--
+                     --><il class="menuItem menuSeparator"><a  class="link" href="works.html">Мои работы</a></il><!--
                      --><il class="menuItem menuItemLast"><a  class="link" href="#contactme">Связаться со мной</a></il>
                     </ul>
                 </div>
@@ -62,7 +63,7 @@
                         <div class="articleTitle">
                             <h2 class="h2">Основная информация</h2>
                         </div>
-                        <figure class=" zeroMargin figurePhoto">
+                        <figure class="zeroMargin figurePhoto">
                             <img src="images/photo.jpg" alt="photo" class="photo">
                         </figure>
                         <div class="descriptionInfo">
@@ -87,16 +88,52 @@
                             </div>
                             
                         </div>
-                    </article>
+                    </article> <!--common info block-->
+                    <article class="article">
+                        <div class="articleTitle">
+                            <h2 class="h2">Опыт работы</h2>
+                        </div>
+                        <figure class="zeroMargin edu_job_Figure">
+                           <div class="jImage"><img class="sprite sprite-ico_job"></div>
+                           <div class="jDescr">
+                               <p class="jobName">Quest Software - Software Developer</p><!--
+                            --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
+                           </div>
+                        </figure>
+                        <figure class="zeroMargin edu_job_Figure">
+                           <div class="jImage"><img class="sprite sprite-ico_job"></div>
+                           <div class="jDescr">
+                               <p class="jobName">Quest Software - Software Developer</p><!--
+                            --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
+                           </div>
+                        </figure>
+                    </article> <!--job-->
+                    <article class="article">
+                        <div class="articleTitle">
+                            <h2 class="h2">Образование</h2>
+                        </div>
+                        <figure class="zeroMargin edu_job_Figure">
+                           <div class="jImage"><img class="sprite sprite-ico_univer"></div>
+                           <div class="jDescr">
+                               <p class="jobName">СПбГЭТУ "ЛЭТИ"</p><!--
+                            --><p class="jobDate">сентябрь 2002 - февраль 2008</p>
+                           </div>
+                        </figure>
+                        <figure class="zeroMargin edu_job_Figure">
+                           <div class="jImage"><img class="sprite sprite-ico_school"></div>
+                           <div class="jDescr">
+                               <p class="jobName">Loftschool</p><!--
+                            --><p class="jobDate">Ноябрь 2015 - настоящее время</p>
+                           </div>
+                        </figure>
+                    </article> <!--education-->
                 </section>
-                <section></section>
-                <section></section>
             </main>
         </div> <!--content-->
         
-    </div>
+    </div> <!--wrapper-->
     
-    <footer class="footer">Это мой сайт, пожайлуйста, не воруйте его.</footer>
+    <footer class="footer"><p class="footerP">©Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p></footer>
 </body>
 <script src="bower/jquery/jquery.js"></script>
 <script src="js/main.js"></script>
