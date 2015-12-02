@@ -285,3 +285,9 @@
     color: #4a545d;
     padding-top: 1%;
 }
+
+.contactImage {
+    margin-left: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
