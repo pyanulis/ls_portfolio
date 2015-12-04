@@ -120,10 +120,11 @@
 .menuItemSelected {
     background-color: #3ba8c0;
     color: white;
+    font-size: 23px;
 }
 
 .menuItem:hover {
-    background-color: #48cbe8;
+    background-color: #3ba8c0;
     color: white;
 }
 
@@ -244,6 +245,9 @@
 	height: 80px;
 	background: #f0f4f7;
 	position: relative;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     min-width: 960px;
 	height: 80px;
@@ -278,12 +282,9 @@
 }
 
 .footerP {
-    text-align: center;
-    line-height: 13px;
     font-size: 13px;
     font-family: "fira_sanslight", sans-serif;
     color: #4a545d;
-    padding-top: 1%;
 }
 
 .contactImage {

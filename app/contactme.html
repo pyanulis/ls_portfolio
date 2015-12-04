@@ -32,38 +32,67 @@
             <aside class="aside">
                 <div class="zeroMargin menuBlock">
                     <ul class="zeroMargin">
-                        <il class="menuItem menuItemFirst"><a class="link" href="index.html">Обо мне</a></il><!--
-                     --><il class="menuItem menuSeparator"><a  class="link" href="works.html">Мои работы</a></il><!--
-                     --><il class="menuItem menuItemLast menuItemSelected"><a  class="link" href="contactme.html">Связаться со мной</a></il>
+                        <li class="menuItem menuItemFirst"><a class="link" href="index.html">Обо мне</a></li><!--
+                     --><li class="menuItem menuSeparator"><a  class="link" href="works.html">Мои работы</a></li><!--
+                     --><li class="menuItem menuItemLast menuItemSelected"><a  class="link" href="contactme.html">Связаться со мной</a></li>
                     </ul>
                 </div>
                 <div class="zeroMargin menuBlock">
                     <ul class="zeroMargin">
-                        <il class="contactItem menuItemFirst contactTitle"><p class="zeroMargin">Контакты</p></il><!--
-                     --><il class="contactItem contactMail">
-                            <a class="linkContact" href="mailto:pyanulis@gmail.com">
-                                <img class="contactImage" src="images/extracts/ico_mail.png"><p class="contactText">pyanulis@gmail.com</p>
+                        <li class="contactItem menuItemFirst contactTitle"><p class="zeroMargin">Контакты</p></li><!--
+                     --><li class="contactItem contactMali">
+                            <a class="linkContact" href="malito:pyanulis@gmali.com">
+                                <img class="contactImage" src="images/extracts/ico_mail.png"><p class="contactText">pyanulis@gmali.com</p>
                             </a>
-                        </il><!--
-                     --><il class="contactItem contactPhone">
+                        </li><!--
+                     --><li class="contactItem contactPhone">
                             <a class="linkContact" href="tel:+79216324228">
                                 <img class="contactImage" src="images/extracts/ico_phone.png"><p class="contactText">+7-921-632-42-28</p>
                             </a>
-                        </il><!--
-                     --><il class="contactItem contactSkype menuItemLast">
+                        </li><!--
+                     --><li class="contactItem contactSkype menuItemLast">
                             <a class="linkContact" href="skype:pavel.yanulis?chat">
                                 <img class="contactImage" src="images/extracts/ico_skype.png"><p class="contactText">pavel.yanulis</p>
                             </a>
-                        </il>
+                        </li>
                     </ul>
                 </div>
             </aside><!--
          --><main class="main">
                 <section class="infoBlock">
                     <article class="article">
-                        <div class="articleTitle">
-                            <h2 class="h2">Связаться со мной</h2>
+                        <div class="contactMeTitle">
+                            <h2 class="h2Contact">У вас интересный проект? Напишите мне.</h2>
                         </div>
+                        <form action="" class="formContactMe">
+                          <div class="formIdFields formArea">
+                              <div>
+                                 <p class="zeroMargin inputCaption">Имя</p>
+                                  <input type="text" placeholder="Как к вам обращаться" class="input idInput" />
+                              </div>
+                              <div>
+                                 <p class="zeroMargin inputCaption">Email</p>
+                                  <input type="email" placeholder="Куда мне писать" class="input idInput" />
+                              </div>
+                          </div>
+                          <div class="formArea">
+                             <p class="zeroMargin inputCaption">Сообщение</p>
+                              <textarea type="text" placeholder="Кратко в чем суть" class="input inputMessage" ></textarea>
+                          </div>
+                          <div class="formArea">
+                             <p class="zeroMargin inputCaption">Введите код, указанный на картинке</p>
+                              <div class="formCapcha">
+                                 <div class="capchaContainer">
+                                     <img src="images/capcha.png" alt="capcha" class="imgCapcha">
+                                 </div>
+                                  <input type="text" placeholder="Введите код" class="input inputCapcha">
+                              </div>
+                          </div>
+                          <div class="formArea formValidateArea">
+                              <input type="submit" class="btnSubmit" value="Отправить"/>
+                              <input type="reset" class="btnReset" value="Очистить"/>
+                          </div>
+                        </form>
                         <div style="width:100%; height: 100px;">
                         </div>
                     </article> <!--common info block-->

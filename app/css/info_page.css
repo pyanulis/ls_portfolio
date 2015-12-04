@@ -79,4 +79,6 @@
 }
 
 .edu_job_Figure {
+    display: flex;
+    align-items: center;
 }
