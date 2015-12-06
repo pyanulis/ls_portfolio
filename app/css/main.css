@@ -236,7 +236,6 @@
     
     font-family: "fira-sansbook", sans-serif;
     font-size: 17px;
-    font-weight: normal;
 }
 
 .linkContact {
@@ -272,8 +271,9 @@
 .contactTitle {
     background-color: #3ba8c0;
     padding-left: 20px;
-    padding-top: 15px;
-    padding-top: 15px;
+    
+    font-family: "fira-sansbook", sans-serif;
+    font-size: 21px;
 }
 
 .contactMail {
@@ -353,8 +353,9 @@
 
 
 .menuItemFirst {
-    border: 1px solid transparent;
-    border-radius:  4px;
+    border-top: 1px solid transparent;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .menuItemLast {
@@ -392,6 +393,7 @@
     height: 32px;
     margin-right: 230px;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .signin-image:hover {
