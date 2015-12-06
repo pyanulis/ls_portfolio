@@ -5,7 +5,7 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin: 35px 20px 70px 55px;
+    margin: 35px 10px 70px 55px;
 }
 
 .photo {
@@ -14,12 +14,13 @@
 .descriptionInfo {
     display: inline-block;
     vertical-align: top;
+    padding-top: 10px;
 }
 
 .descrItem {
     font-family: "fira_sansbook", sans-serif;
     color: #37424d;
-    margin: 6px 0px;
+    margin: 10px 0px;
 }
 
 .descrCaption {
@@ -46,6 +47,7 @@
 
 .skillsCaption {
     display: table-cell;
+    vertical-align: top;
 }
 
 .skillsList {
@@ -54,17 +56,17 @@
 }
 
 .jImage {
-    display: inline-block;
+    display: table-cell;
     margin-right: 30px;
     padding-left: 60px;
     padding-top: 28px;
+    line-height: 100%;
 }
 
 .jDescr {
-    display: inline-block;
+    display: table-cell;
     height: 100%;
     vertical-align: top;
-    padding-top: 28px;
 }
 
 .jobName {
@@ -83,7 +85,28 @@
     font-size: 15px;
 }
 
-.edu_job_Figure {
-    display: flex;
-    align-items: center;
+.job_Figure {
+    list-style: none;
+    background: url("../images/ico_job.png") 20px center no-repeat;
+    padding-left: 90px;
+    margin-bottom: 10px;
+}
+
+.jImage-content {
+    vertical-align: middle;
+    line-height: 1.25em;
+}
+
+.univer_Figure {
+    list-style: none;
+    background: url("../images/ico_univer.png") 20px center no-repeat;
+    padding-left: 90px;
+    margin-bottom: 10px;
+}
+
+.school_Figure {
+    list-style: none;
+    background: url("../images/ico_school.png") 30px center no-repeat;
+    padding-left: 90px;
+    margin-bottom: 10px;
 }

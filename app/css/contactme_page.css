@@ -54,37 +54,28 @@
 .inputField {
     border: 1px solid #48cbe8;
     border-radius: 3px;
-    font-family: "fira_sansbook", sans-serif;
-    font-size: 13px;
     color: #48cbe8;
+    font-family: "fira-sanslight", sans-serif;
+    font-size: 13px;
+    padding: 9px;
 }
 
 /*-------------------------------------------------------- input placeholder ----------------------------------------------------*/
 
 .inputField::-webkit-input-placeholder{
     color: #48cbe8;
-    font-family: "fira-sanslight", sans-serif;
-    font-size: 13px;
-    padding-left: 10px;
-    vertical-align: top;
 }
 
 .inputField:-moz-placeholder{
     color: #48cbe8;
-    font-family: "fira-sanslight", sans-serif;
-    font-size: 13px;
 }
 
 .inputField::-moz-placeholder{
     color: #48cbe8;
-    font-family: "fira-sanslight", sans-serif;
-    font-size: 13px;
 }
 
 .inputField:-ms-input-placeholder{
     color: #48cbe8;
-    font-family: "fira-sanslight", sans-serif;
-    font-size: 13px;
 }
 
 /*-------------------------------------------------------- input placeholder ----------------------------------------------------*/
@@ -94,7 +85,7 @@
     height: 185px;
 }
 
-.inputField .textarea::-webkit-input-placeholder{
+/*.inputField .textarea::-webkit-input-placeholder{
     padding-top: 30px;
 }
 
@@ -108,7 +99,7 @@
 
 .inputField .textarea:-ms-input-placeholder{
     padding-top: 30px;
-}
+}*/
 
 .formArea {
     margin-bottom: 20px;
@@ -191,6 +182,15 @@
 }
 
 .btnReset:active {
+    border: none;
+    border-top: 2px solid #687b8f;
+}
+
+.btnSubmit:hover {
+    border: none;
+}
+
+.btnSubmit:active {
     border: none;
     border-top: 2px solid #687b8f;
 }

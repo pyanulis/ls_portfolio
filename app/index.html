@@ -18,21 +18,22 @@
     <body class="body">
         <div class="wrapper">
             <header class="header">
-                <div class="logo">
-                    <a href="http://loftschool.com">
-                        <img src="images/logo.png" alt="http://loftschool.com">
-                    </a>
-                </div>
-                <div class="socialBlock">
-                   <ul class="zeroMargin">
-                       <li class="spriteHeader "><a href="https://vk.com" class="sprite  sprite-ico_vk"></a></li><!--
-                    --><li class="spriteHeader"><a href="https://twitter.com" class="sprite  sprite-ico_tw" ></a></li><!--
-                    --><li class="spriteHeader"><a href="https://facebook.com" class="sprite  sprite-ico_fb"></a></li><!--
-                    --><li class="spriteHeader"><a href="https://github.com" class="sprite  sprite-ico_git lastHeaderBlock"></a></li>
-                   </ul>
+                <div class="headerContainer">
+                    <div class="logo">
+                        <a href="http://loftschool.com">
+                            <img src="images/logo.png" alt="http://loftschool.com">
+                        </a>
+                    </div>
+                    <div class="socialBlock">
+                       <ul class="zeroMargin">
+                           <li class="spriteHeader "><a href="https://vk.com" class="sprite sprite-ico_vk"></a></li><!--
+                        --><li class="spriteHeader"><a href="https://twitter.com" class="sprite sprite-ico_tw" ></a></li><!--
+                        --><li class="spriteHeader"><a href="https://facebook.com" class="sprite sprite-ico_fb"></a></li><!--
+                        --><li class="spriteHeader"><a href="https://github.com" class="sprite sprite-ico_git lastHeaderBlock"></a></li>
+                       </ul>
+                    </div>
                 </div>
             </header>
-
             <div class="pageContent">
                 <aside class="aside">
                     <nav class="zeroMargin navigationBlock">
@@ -68,7 +69,8 @@
                     <section class="infoBlock">
                         <article class="articleClass">
                             <div class="articleTitle">
-                                <h2 class="content-block-title">Основная информация</h2>
+                                <span class="empty-vert-align"></span>
+                                <h2 class="content-block-title inner-vert-align">Основная информация</h2>
                             </div>
                             <figure class="zeroMargin figurePhoto ">
                                 <img src="images/photo.jpg" alt="photo" class="photo">
@@ -79,7 +81,7 @@
                                 <p class="descrItem"><span class="descrCaption">Мой город:</span>Санкт-Петербург</p>
                                 <p class="descrItem"><span class="descrCaption">Моя специализация:</span>.NET, frontend разработчик</p>
                                 <div class="skillsCaption">
-                                    <p class="descrCaption">Ключевые навыки:</p>
+                                    <span class="descrCaption">Ключевые навыки:</span>
                                 </div>
                                 <div class="skillsList">
                                     <p class="skillItem">.net</p>
@@ -98,41 +100,51 @@
                         </article> <!--common info block-->
                         <article class="articleClass">
                             <div class="articleTitle">
-                                <h2 class="content-block-title">Опыт работы</h2>
+                                <span class="empty-vert-align"></span>
+                                <h2 class="content-block-title inner-vert-align">Опыт работы</h2>
                             </div>
-                            <figure class="zeroMargin edu_job_Figure">
-                               <div class="jImage"><img src="images/extracts/ico_job.png" alt="job"></div>
-                               <div class="jDescr">
-                                   <p class="jobName">Quest Software - Software Developer</p><!--
-                                --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
-                               </div>
-                            </figure>
-                            <figure class="zeroMargin edu_job_Figure">
-                               <div class="jImage"><img src="images/extracts/ico_job.png" alt="job"></div>
-                               <div class="jDescr">
-                                   <p class="jobName">Quest Software - Software Developer</p><!--
-                                --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
-                               </div>
-                            </figure>
+                            <ul>
+                                <li class="job_Figure">
+                                    <figure class="zeroMargin">
+                                        <div class="jDescr">
+                                            <p class="jobName">Quest Software - Software Developer</p><!--
+                                         --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="job_Figure">
+                                    <figure class="zeroMargin">
+                                        <div class="jDescr">
+                                            <p class="jobName">Quest Software - Software Developer</p><!--
+                                         --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
+                                        </div>
+                                    </figure>
+                                </li>
+                            </ul>
                         </article> <!--job-->
                         <article class="articleClass">
                             <div class="articleTitle">
-                                <h2 class="content-block-title">Образование</h2>
+                                <span class="empty-vert-align"></span>
+                                <h2 class="content-block-title inner-vert-align">Образование</h2>
                             </div>
-                            <figure class="zeroMargin edu_job_Figure">
-                               <div class="jImage"><img src="images/extracts/ico_univer.png" alt="univer"></div>
-                               <div class="jDescr">
-                                   <p class="jobName">СПбГЭТУ "ЛЭТИ"</p><!--
-                                --><p class="jobDate">сентябрь 2002 - февраль 2008</p>
-                               </div>
-                            </figure>
-                            <figure class="zeroMargin edu_job_Figure">
-                               <div class="jImage"><img src="images/extracts/ico_school.png" alt="school"></div>
-                               <div class="jDescr">
-                                   <p class="jobName">Loftschool</p><!--
-                                --><p class="jobDate">Ноябрь 2015 - настоящее время</p>
-                               </div>
-                            </figure>
+                            <ul>
+                                <li class="univer_Figure">
+                                    <figure class="zeroMargin">
+                                        <div class="jDescr">
+                                           <p class="jobName">СПбГЭТУ "ЛЭТИ"</p><!--
+                                        --><p class="jobDate">сентябрь 2002 - февраль 2008</p>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="school_Figure">
+                                    <figure class="zeroMargin">
+                                        <div class="jDescr">
+                                           <p class="jobName">Loftschool</p><!--
+                                        --><p class="jobDate">Ноябрь 2015 - настоящее время</p>
+                                        </div>
+                                    </figure>
+                                </li>
+                            </ul>
                         </article> <!--education-->
                     </section>
                 </main>
@@ -143,7 +155,7 @@
             <span class="footer-content-before"></span>
             <div class="footerP">
                 <div class="signin-image"></div>
-                <p class="copyright">©Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+                <p class="copyright">© 2015 Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
             </div>
         </footer>
     </body>
