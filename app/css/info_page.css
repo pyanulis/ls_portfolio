@@ -1,13 +1,15 @@
 .figurePhoto {
     display: inline-block;
-}
-
-.photo {
+    overflow: hidden;
     border: 4px solid #3ba8c0;
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin: 35px 20px 70px 55px;
+}
+
+.photo {
+    width: 100%;
 }
 .descriptionInfo {
     display: inline-block;
@@ -67,14 +69,13 @@
     vertical-align: text-top;
     font-family: "fira_sansmedium", sans-serif;
     color: #37424d;
-    line-height: 17px;
+    font-size: 17px;
 }
 
 .jobDate {
     margin: 0px;
     font-family: "fira_sansbook", sans-serif;
     color: #37424d;
-    line-height: 15px;
     font-size: 15px;
 }
 

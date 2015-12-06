@@ -1,9 +1,8 @@
 <!doctype html>
 <html class="html">
-<head>
+<head lang="ru-RU">
     <meta charset="UTF-8">
-    <meta lang="ru-RU">
-    <title>Untitled Document</title>
+    <title>Portfolio: contact me</title>
     <link href="bower/normalize-css/normalize.css" rel="stylesheet" >
     <link href="css/icons.css" rel="stylesheet" >
     <link href="fonts/fira/fira.css" rel="stylesheet" >
@@ -17,14 +16,17 @@
     <div class="wrapper">
         <header class="header clearfix">
             <div class="logo">
-               <img src="images/logo.png" alt="Loftschool.com">
+                <a href="http://loftschool.com">
+                    <img src="images/logo.png" alt="http://loftschool.com">
+                </a>
             </div>
-            
             <div class="socialBlock">
-                <a href="https://vk.com" alt="vk" class="sprite spriteHeader sprite-ico_vk"></a><!--
-             --><a href="https://twitter.com" alt="twitter" class="sprite spriteHeader sprite-ico_tw" ></a><!--
-             --><a href="https://facebook.com" alt="facebook" class="sprite spriteHeader sprite-ico_fb"></a><!--
-             --><a href="https://github.com" alt="git" class="sprite spriteHeader sprite-ico_git lastHeaderBlock"></a>
+               <ul class="zeroMargin">
+                   <li class="spriteHeader "><a href="https://vk.com" class="sprite  sprite-ico_vk"></a></li><!--
+                --><li class="spriteHeader"><a href="https://twitter.com" class="sprite  sprite-ico_tw" ></a></li><!--
+                --><li class="spriteHeader"><a href="https://facebook.com" class="sprite  sprite-ico_fb"></a></li><!--
+                --><li class="spriteHeader"><a href="https://github.com" class="sprite  sprite-ico_git lastHeaderBlock"></a></li>
+               </ul>
             </div>
         </header>
         
@@ -40,19 +42,19 @@
                 <div class="zeroMargin menuBlock">
                     <ul class="zeroMargin">
                         <li class="contactItem menuItemFirst contactTitle"><p class="zeroMargin">Контакты</p></li><!--
-                     --><li class="contactItem contactMali">
-                            <a class="linkContact" href="malito:pyanulis@gmali.com">
-                                <img class="contactImage" src="images/extracts/ico_mail.png"><p class="contactText">pyanulis@gmali.com</p>
+                     --><li class="contactItem contactMail">
+                            <a class="linkContact" href="mailto:pyanulis@gmail.com">
+                                <img class="contactImage" src="images/extracts/ico_mail.png" alt="mail"><p class="contactText">pyanulis@gmail.com</p>
                             </a>
                         </li><!--
                      --><li class="contactItem contactPhone">
                             <a class="linkContact" href="tel:+79216324228">
-                                <img class="contactImage" src="images/extracts/ico_phone.png"><p class="contactText">+7-921-632-42-28</p>
+                                <img class="contactImage" src="images/extracts/ico_phone.png" alt="phone"><p class="contactText">+7-921-632-42-28</p>
                             </a>
                         </li><!--
                      --><li class="contactItem contactSkype menuItemLast">
                             <a class="linkContact" href="skype:pavel.yanulis?chat">
-                                <img class="contactImage" src="images/extracts/ico_skype.png"><p class="contactText">pavel.yanulis</p>
+                                <img class="contactImage" src="images/extracts/ico_skype.png" alt="skype"><p class="contactText">pavel.yanulis</p>
                             </a>
                         </li>
                     </ul>
@@ -60,24 +62,24 @@
             </aside><!--
          --><main class="main">
                 <section class="infoBlock">
-                    <article class="article">
+                    <article class="articleClass">
                         <div class="contactMeTitle">
                             <h2 class="h2Contact">У вас интересный проект? Напишите мне.</h2>
                         </div>
-                        <form action="" class="formContactMe">
+                        <form class="formContactMe">
                           <div class="formIdFields formArea">
                               <div>
                                  <p class="zeroMargin inputCaption">Имя</p>
-                                  <input type="text" placeholder="Как к вам обращаться" class="input idInput" />
+                                  <input type="text" placeholder="Как к вам обращаться" class="inputField idInput" />
                               </div>
                               <div>
                                  <p class="zeroMargin inputCaption">Email</p>
-                                  <input type="email" placeholder="Куда мне писать" class="input idInput" />
+                                  <input type="email" placeholder="Куда мне писать" class="inputField idInput" />
                               </div>
                           </div>
                           <div class="formArea">
                              <p class="zeroMargin inputCaption">Сообщение</p>
-                              <textarea type="text" placeholder="Кратко в чем суть" class="input inputMessage" ></textarea>
+                              <textarea placeholder="Кратко в чем суть" class="inputField inputMessage" ></textarea>
                           </div>
                           <div class="formArea">
                              <p class="zeroMargin inputCaption">Введите код, указанный на картинке</p>
@@ -85,7 +87,7 @@
                                  <div class="capchaContainer">
                                      <img src="images/capcha.png" alt="capcha" class="imgCapcha">
                                  </div>
-                                  <input type="text" placeholder="Введите код" class="input inputCapcha">
+                                  <input type="text" placeholder="Введите код" class="inputField inputCapcha">
                               </div>
                           </div>
                           <div class="formArea formValidateArea">
@@ -101,8 +103,13 @@
         </div> <!--content-->
         
     </div> <!--wrapper-->
-    
-    <footer class="footer"><p class="footerP">©Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p></footer>
+    <footer class="footer">
+        <span class="footer-content-before"></span>
+        <div class="footerP">
+            <div class="signin-image"></div>
+            <p class="copyright">©Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+        </div>
+    </footer>
 </body>
 <script src="bower/jquery/jquery.js"></script>
 <script src="js/main.js"></script>

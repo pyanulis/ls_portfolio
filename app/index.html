@@ -1,142 +1,147 @@
 <!doctype html>
 <html class="html">
-<head>
-    <meta charset="UTF-8">
-    <meta lang="ru-RU">
-    <title>Untitled Document</title>
-    <link href="bower/normalize-css/normalize.css" rel="stylesheet" >
-    <link href="css/icons.css" rel="stylesheet" >
-    <link href="fonts/fira/fira.css" rel="stylesheet" >
-    <link href="fonts/Proxima-Nova/ProximaNova.css" rel="stylesheet" >
-    <link href="css/text.css" rel="stylesheet" >
-    <link href="css/main.css" rel="stylesheet" >
-    <link href="css/info_page.css" rel="stylesheet" >
-</head>
-<body class="body">
-    <div class="wrapper clearfix">
-        <header class="header">
-            <div class="logo">
-               <img src="images/logo.png" alt="Loftschool.com">
-            </div>
-            
-            <div class="socialBlock">
-                <a href="https://vk.com" alt="vk" class="sprite spriteHeader sprite-ico_vk"></a><!--
-             --><a href="https://twitter.com" alt="twitter" class="sprite spriteHeader sprite-ico_tw" ></a><!--
-             --><a href="https://facebook.com" alt="facebook" class="sprite spriteHeader sprite-ico_fb"></a><!--
-             --><a href="https://github.com" alt="git" class="sprite spriteHeader sprite-ico_git lastHeaderBlock"></a>
-            </div>
-        </header>
-        
-        <div class="pageContent">
-            <aside class="aside">
-                <div class="zeroMargin menuBlock">
-                    <ul class="zeroMargin">
-                        <li class="menuItem menuItemFirst menuItemSelected"><a class="link" href="#me">Обо мне</a></li><!--
-                     --><li class="menuItem menuSeparator"><a  class="link" href="works.html">Мои работы</a></li><!--
-                     --><li class="menuItem menuItemLast"><a  class="link" href="contactme.html">Связаться со мной</a></li>
-                    </ul>
+    <head lang="ru-RU">
+        <meta charset="UTF-8">
+        <title>Portfolio: main</title>
+        <link href="bower/normalize-css/normalize.css" rel="stylesheet" >
+        <link href="css/icons.css" rel="stylesheet" >
+        <link href="fonts/fira/fira.css" rel="stylesheet" >
+        <link href="fonts/Proxima-Nova/ProximaNova.css" rel="stylesheet" >
+        <link href="css/text.css" rel="stylesheet" >
+        <link href="css/main.css" rel="stylesheet" >
+        <link href="css/info_page.css" rel="stylesheet" >
+    </head>
+    <body class="body">
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo">
+                    <a href="http://loftschool.com">
+                        <img src="images/logo.png" alt="http://loftschool.com">
+                    </a>
                 </div>
-                <div class="zeroMargin menuBlock">
-                    <ul class="zeroMargin">
-                        <li class="contactItem menuItemFirst contactTitle"><p class="zeroMargin">Контакты</p></li><!--
-                     --><li class="contactItem contactMail">
-                            <a class="linkContact" href="mailto:pyanulis@gmail.com">
-                                <img class="contactImage" src="images/extracts/ico_mail.png"><p class="contactText">pyanulis@gmail.com</p>
-                            </a>
-                        </li><!--
-                     --><li class="contactItem contactPhone">
-                            <a class="linkContact" href="tel:+79216324228">
-                                <img class="contactImage" src="images/extracts/ico_phone.png"><p class="contactText">+7-921-632-42-28</p>
-                            </a>
-                        </li><!--
-                     --><li class="contactItem contactSkype menuItemLast">
-                            <a class="linkContact" href="skype:pavel.yanulis?chat">
-                                <img class="contactImage" src="images/extracts/ico_skype.png"><p class="contactText">pavel.yanulis</p>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="socialBlock">
+                   <ul class="zeroMargin">
+                       <li class="spriteHeader "><a href="https://vk.com" class="sprite  sprite-ico_vk"></a></li><!--
+                    --><li class="spriteHeader"><a href="https://twitter.com" class="sprite  sprite-ico_tw" ></a></li><!--
+                    --><li class="spriteHeader"><a href="https://facebook.com" class="sprite  sprite-ico_fb"></a></li><!--
+                    --><li class="spriteHeader"><a href="https://github.com" class="sprite  sprite-ico_git lastHeaderBlock"></a></li>
+                   </ul>
                 </div>
-            </aside><!--
-         --><main class="main">
-                <section class="infoBlock">
-                    <article class="article">
-                        <div class="articleTitle">
-                            <h2 class="h2">Основная информация</h2>
-                        </div>
-                        <figure class="zeroMargin figurePhoto">
-                            <img src="images/photo.jpg" alt="photo" class="photo">
-                        </figure>
-                        <div class="descriptionInfo">
-                            <p class="descrItem"><span class="descrCaption">Меня зовут:</span>Павел Янулис</p>
-                            <p class="descrItem"><span class="descrCaption">Мой возраст:</span>30 лет</p>
-                            <p class="descrItem"><span class="descrCaption">Мой город:</span>Санкт-Петербург</p>
-                            <p class="descrItem"><span class="descrCaption">Моя специализация:</span>.NET, frontend разработчик</p>
-                            <div class="skillsCaption">
-                                <p class="descrCaption">Ключевые навыки:</p>
+            </header>
+
+            <div class="pageContent">
+                <aside class="aside">
+                    <nav class="zeroMargin menuBlock">
+                        <ul class="zeroMargin">
+                            <li class="menuItem menuItemFirst menuItemSelected"><a class="link" href="index.html">Обо мне</a></li><!--
+                         --><li class="menuItem menuSeparator"><a  class="link" href="works.html">Мои работы</a></li><!--
+                         --><li class="menuItem menuItemLast"><a  class="link" href="contactme.html">Связаться со мной</a></li>
+                        </ul>
+                    </nav>
+                    <div class="zeroMargin menuBlock">
+                        <ul class="zeroMargin">
+                            <li class="contactItem menuItemFirst contactTitle"><p class="zeroMargin">Контакты</p></li><!--
+                         --><li class="contactItem contactMail">
+                                <a class="linkContact" href="mailto:pyanulis@gmail.com">
+                                    <img class="contactImage" src="images/extracts/ico_mail.png" alt="mail"><p class="contactText">pyanulis@gmail.com</p>
+                                </a>
+                            </li><!--
+                         --><li class="contactItem contactPhone">
+                                <a class="linkContact" href="tel:+79216324228">
+                                    <img class="contactImage" src="images/extracts/ico_phone.png" alt="phone"><p class="contactText">+7-921-632-42-28</p>
+                                </a>
+                            </li><!--
+                         --><li class="contactItem contactSkype menuItemLast">
+                                <a class="linkContact" href="skype:pavel.yanulis?chat">
+                                    <img class="contactImage" src="images/extracts/ico_skype.png" alt="skype"><p class="contactText">pavel.yanulis</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside><!--
+             --><main class="main">
+                    <section class="infoBlock">
+                        <article class="articleClass">
+                            <div class="articleTitle">
+                                <h2 class="content-block-title">Основная информация</h2>
                             </div>
-                            <div class="skillsList">
-                                <p class="skillItem">.net</p>
-                                <p class="skillItem">wcf</p>
-                                <p class="skillItem">wpf</p>
-                                <p class="skillItem">javascript</p>
-                                <p class="skillItem">css</p>
-                                <p class="skillItem">php</p>
-                                <p class="skillItem">html</p>
-                                <p class="skillItem">gulp</p>
-                                <p class="skillItem">bower</p>
-                                <p class="skillItem">git</p>
+                            <figure class="zeroMargin figurePhoto ">
+                                <img src="images/photo.jpg" alt="photo" class="photo">
+                            </figure>
+                            <div class="descriptionInfo">
+                                <p class="descrItem"><span class="descrCaption">Меня зовут:</span>Павел Янулис</p>
+                                <p class="descrItem"><span class="descrCaption">Мой возраст:</span>30 лет</p>
+                                <p class="descrItem"><span class="descrCaption">Мой город:</span>Санкт-Петербург</p>
+                                <p class="descrItem"><span class="descrCaption">Моя специализация:</span>.NET, frontend разработчик</p>
+                                <div class="skillsCaption">
+                                    <p class="descrCaption">Ключевые навыки:</p>
+                                </div>
+                                <div class="skillsList">
+                                    <p class="skillItem">.net</p>
+                                    <p class="skillItem">wcf</p>
+                                    <p class="skillItem">wpf</p>
+                                    <p class="skillItem">javascript</p>
+                                    <p class="skillItem">css</p>
+                                    <p class="skillItem">php</p>
+                                    <p class="skillItem">html</p>
+                                    <p class="skillItem">gulp</p>
+                                    <p class="skillItem">bower</p>
+                                    <p class="skillItem">git</p>
+                                </div>
+
                             </div>
-                            
-                        </div>
-                    </article> <!--common info block-->
-                    <article class="article">
-                        <div class="articleTitle">
-                            <h2 class="h2">Опыт работы</h2>
-                        </div>
-                        <figure class="zeroMargin edu_job_Figure">
-                           <div class="jImage"><img src="images/extracts/ico_job.png"></div>
-                           <div class="jDescr">
-                               <p class="jobName">Quest Software - Software Developer</p><!--
-                            --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
-                           </div>
-                        </figure>
-                        <figure class="zeroMargin edu_job_Figure">
-                           <div class="jImage"><img src="images/extracts/ico_job.png"></div>
-                           <div class="jDescr">
-                               <p class="jobName">Quest Software - Software Developer</p><!--
-                            --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
-                           </div>
-                        </figure>
-                    </article> <!--job-->
-                    <article class="article">
-                        <div class="articleTitle">
-                            <h2 class="h2">Образование</h2>
-                        </div>
-                        <figure class="zeroMargin edu_job_Figure">
-                           <div class="jImage"><img src="images/extracts/ico_univer.png"></div>
-                           <div class="jDescr">
-                               <p class="jobName">СПбГЭТУ "ЛЭТИ"</p><!--
-                            --><p class="jobDate">сентябрь 2002 - февраль 2008</p>
-                           </div>
-                        </figure>
-                        <figure class="zeroMargin edu_job_Figure">
-                           <div class="jImage"><img src="images/extracts/ico_school.png"></div>
-                           <div class="jDescr">
-                               <p class="jobName">Loftschool</p><!--
-                            --><p class="jobDate">Ноябрь 2015 - настоящее время</p>
-                           </div>
-                        </figure>
-                    </article> <!--education-->
-                </section>
-            </main>
-        </div> <!--content-->
-        
-    </div> <!--wrapper-->
-    
-    <footer class="footer">
-        <p class="footerP">©Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
-    </footer>
-</body>
-<script src="bower/jquery/jquery.js"></script>
-<script src="js/main.js"></script>
+                        </article> <!--common info block-->
+                        <article class="articleClass">
+                            <div class="articleTitle">
+                                <h2 class="content-block-title">Опыт работы</h2>
+                            </div>
+                            <figure class="zeroMargin edu_job_Figure">
+                               <div class="jImage"><img src="images/extracts/ico_job.png" alt="job"></div>
+                               <div class="jDescr">
+                                   <p class="jobName">Quest Software - Software Developer</p><!--
+                                --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
+                               </div>
+                            </figure>
+                            <figure class="zeroMargin edu_job_Figure">
+                               <div class="jImage"><img src="images/extracts/ico_job.png" alt="job"></div>
+                               <div class="jDescr">
+                                   <p class="jobName">Quest Software - Software Developer</p><!--
+                                --><p class="jobDate">Декабрь 2005 - Декабрь 2009</p>
+                               </div>
+                            </figure>
+                        </article> <!--job-->
+                        <article class="articleClass">
+                            <div class="articleTitle">
+                                <h2 class="content-block-title">Образование</h2>
+                            </div>
+                            <figure class="zeroMargin edu_job_Figure">
+                               <div class="jImage"><img src="images/extracts/ico_univer.png" alt="univer"></div>
+                               <div class="jDescr">
+                                   <p class="jobName">СПбГЭТУ "ЛЭТИ"</p><!--
+                                --><p class="jobDate">сентябрь 2002 - февраль 2008</p>
+                               </div>
+                            </figure>
+                            <figure class="zeroMargin edu_job_Figure">
+                               <div class="jImage"><img src="images/extracts/ico_school.png" alt="school"></div>
+                               <div class="jDescr">
+                                   <p class="jobName">Loftschool</p><!--
+                                --><p class="jobDate">Ноябрь 2015 - настоящее время</p>
+                               </div>
+                            </figure>
+                        </article> <!--education-->
+                    </section>
+                </main>
+            </div> <!--content-->
+
+        </div> <!--wrapper-->
+        <footer class="footer">
+            <span class="footer-content-before"></span>
+            <div class="footerP">
+                <div class="signin-image"></div>
+                <p class="copyright">©Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+            </div>
+        </footer>
+    </body>
+    <script src="bower/jquery/jquery.js"></script>
+    <script src="js/main.js"></script>
 </html>

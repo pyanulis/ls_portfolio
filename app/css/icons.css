@@ -1,7 +1,6 @@
 .sprite {
-    background-image: url(../images/spritesheet.png);
-    background-repeat: no-repeat;
     margin: 0;
+    display: block;
 }
 
 /*----------------------------------------------logo icons-----------------------------------------*/
@@ -16,49 +15,57 @@
 .sprite-ico_vk {
     width: 47px;
     height: 47px;
-    background-position: -165px -137px;
+    background-image: url(../images/ico_vk.png);
+    background-repeat: no-repeat;
 }
 
 .sprite-ico_vk:hover {
     width: 47px;
     height: 47px;
-    background-position: -233px -5px;
+    background-image: url(../images/ico_vk_hover.png);
+    background-repeat: no-repeat;
 }
 
 .sprite-ico_tw {
     width: 47px;
     height: 47px;
-    background-position: -51px -104px;
+    background-image: url(../images/ico_tw.png);
+    background-repeat: no-repeat;
 }
 
 .sprite-ico_tw:hover {
     width: 47px;
     height: 47px;
-    background-position: -108px -104px;
+    background-image: url(../images/ico_tw_hover.png);
+    background-repeat: no-repeat;
 }
 
 .sprite-ico_fb {
     width: 47px;
     height: 47px;
-    background-position: -5px -5px;
+    background-image: url(../images/ico_fb.png);
+    background-repeat: no-repeat;
 }
 
 .sprite-ico_fb:hover {
     width: 47px;
     height: 47px;
-    background-position: -62px -5px;
+    background-image: url(../images/ico_fb_hover.png);
+    background-repeat: no-repeat;
 }
 
 .sprite-ico_git {
     width: 47px;
     height: 47px;
-    background-position: -119px -5px;
+    background-image: url(../images/ico_git.png);
+    background-repeat: no-repeat;
 }
 
 .sprite-ico_git:hover {
     width: 47px;
     height: 47px;
-    background-position: -176px -5px;
+    background-image: url(../images/ico_git_hover.png);
+    background-repeat: no-repeat;
 }
 
 /*----------------------------------------------menu icons-----------------------------------------*/

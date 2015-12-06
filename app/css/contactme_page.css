@@ -44,17 +44,17 @@
     height: 185px;
 }
 
-.input {
+.inputField {
     border: 1px solid #48cbe8;
     border-radius: 3px;
     font-family: "fira_sansbook", sans-serif;
     font-size: 13px;
-    color: #687b8f;
+    color: #48cbe8;
 }
 
 /*-------------------------------------------------------- input placeholder ----------------------------------------------------*/
 
-.input::-webkit-input-placeholder{
+.inputField::-webkit-input-placeholder{
     color: #48cbe8;
     font-family: "fira-sanslight", sans-serif;
     font-size: 13px;
@@ -62,19 +62,19 @@
     vertical-align: top;
 }
 
-.input:-moz-placeholder{
+.inputField:-moz-placeholder{
     color: #48cbe8;
     font-family: "fira-sanslight", sans-serif;
     font-size: 13px;
 }
 
-.input::-moz-placeholder{
+.inputField::-moz-placeholder{
     color: #48cbe8;
     font-family: "fira-sanslight", sans-serif;
     font-size: 13px;
 }
 
-.input:-ms-input-placeholder{
+.inputField:-ms-input-placeholder{
     color: #48cbe8;
     font-family: "fira-sanslight", sans-serif;
     font-size: 13px;
@@ -87,19 +87,19 @@
     height: 185px;
 }
 
-.input .textarea::-webkit-input-placeholder{
+.inputField .textarea::-webkit-input-placeholder{
     padding-top: 30px;
 }
 
-.input .textarea:-moz-placeholder{
+.inputField .textarea:-moz-placeholder{
     padding-top: 30px;
 }
 
-.input .textarea::-moz-placeholder{
+.inputField .textarea::-moz-placeholder{
     padding-top: 30px;
 }
 
-.input .textarea:-ms-input-placeholder{
+.inputField .textarea:-ms-input-placeholder{
     padding-top: 30px;
 }
 
