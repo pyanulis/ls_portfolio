@@ -36,7 +36,7 @@
     height: auto;
     padding: 0px;
     width: auto;
-    min-width: 960px;
+    min-width: 1200px;
     position: relative;
     
     vertical-align: middle;
@@ -72,9 +72,13 @@
     list-style: none;
 }
 
+.spriteHeader:last-child {
+    margin-right: 0px;
+}
+
 .logo {
     float: left;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-top: 40px;
     vertical-align: middle;
 }
@@ -86,7 +90,7 @@
 .socialBlock {
     float: right; 
     padding:0px;
-    padding-right: 90px;
+    padding-right: 0px;
 }
 
 
@@ -428,6 +432,6 @@
 }
 
 .headerContainer {
-    max-width: 1400px;
+    width: 1200px;
     margin: 0 auto;
 }
