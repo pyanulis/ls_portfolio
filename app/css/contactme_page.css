@@ -7,6 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    text-align: center;
 }
 
 .h2Contact {
@@ -15,6 +17,8 @@
     font-weight: normal;
     font-family: "fira_sansbook", sans-serif;
     font-size: 27px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .formContactMe {
@@ -24,8 +28,8 @@
 }
 
 .formIdFields {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
 }
 
 .inputCaption {
@@ -35,13 +39,16 @@
 }
 
 .idInput {
-    width: 195px;
     height: 35px;
+    width: 195px;
+    box-sizing: border-box;
 }
 
 .inputMessage {
+    padding: 0;
     width: 100%;
-    height: 185px;
+    height: 185px; 
+    box-sizing: border-box;
 }
 
 .inputField {
@@ -108,18 +115,24 @@
 }
 
 .formCapcha {
-    display: flex;
+    /*display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
 }
 
 .inputCapcha {
     height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.25;
 }
 
 .imgCapcha {
     background-color: white;
+    
+    display: inline-block;
     vertical-align: middle;
+    line-height: 1.25;
 }
 
 .capchaContainer {
@@ -128,9 +141,10 @@
     background-color: white;
     height: 80px;
     width: 190px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    float:left;
+    text-align: center;
+    line-height: 80px;
 }
 
 .formValidateArea {
@@ -141,29 +155,59 @@
 .btnSubmit {
     background-color: #48cbe8;
     color: white;
-    border-radius: 4px;
-    border: 0px;
-    border-bottom: 2px solid #3ba8c0;
-    box-sizing: border-box;
     height: 33px;
     widows: 137px;
     font-family: "fira_sansbook", sans-serif;
     font-size: 19px;
     padding-left: 22px;
     padding-right: 22px;
+    float: left;
+    
+    border-radius: 4px;
+    border: 0px;
+    border-bottom: 2px solid #3ba8c0;
+    box-sizing: border-box;
 }
 
 .btnReset {
     background-color: #849db5;
     color: white;
-    border-radius: 4px;
-    border: 0px;
-    border-bottom: 2px solid #687b8f;
-    box-sizing: border-box;
     height: 33px;
     widows: 137px;
     font-family: "fira_sansbook", sans-serif;
     font-size: 19px;
     padding-left: 22px;
     padding-right: 22px;
+    float: right;
+    
+    border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid #687b8f;
+    box-sizing: border-box;
+}
+
+.btnReset:hover {
+    border: none;
+}
+
+.btnReset:active {
+    border: none;
+    border-top: 2px solid #687b8f;
+}
+
+.inpuBlock-name {
+    display: inline-block;
+    max-width: 195px;
+    float: left;
+}
+
+.inpuBlock-mail {
+    display: inline-block;
+    max-width: 195px;
+    float: right;
+}
+
+.capchaInput {
+    float: right;
+    line-height: 80px;
 }

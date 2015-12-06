@@ -10,7 +10,11 @@
         <link href="css/text.css" rel="stylesheet" >
         <link href="css/main.css" rel="stylesheet" >
         <link href="css/info_page.css" rel="stylesheet" >
+        <script src="bower/modernizr/modernizr.js"></script>
     </head>
+<!--[if lt IE 8]>
+<p class="browsehappy">Вы используете <strong>устаревший браузер</strong>, пожалуйста <a href="http://browsehappy.com">обновите</a> его.</p>
+<![endif]-->
     <body class="body">
         <div class="wrapper">
             <header class="header">
@@ -31,11 +35,12 @@
 
             <div class="pageContent">
                 <aside class="aside">
-                    <nav class="zeroMargin menuBlock">
-                        <ul class="zeroMargin">
-                            <li class="menuItem menuItemFirst menuItemSelected"><a class="link" href="index.html">Обо мне</a></li><!--
-                         --><li class="menuItem menuSeparator"><a  class="link" href="works.html">Мои работы</a></li><!--
-                         --><li class="menuItem menuItemLast"><a  class="link" href="contactme.html">Связаться со мной</a></li>
+                    <nav class="zeroMargin navigationBlock">
+                        <ul class="zeroMargin menuBlock">
+                            <li class="menuItem menuItemSelected">
+                            <a class="link " href="index.html">Обо мне</a></li><!--
+                         --><li class="menuItem "><a  class="link link-no-border" href="works.html">Мои работы</a></li><!--
+                         --><li class="menuItem "><a  class="link" href="contactme.html">Связаться со мной</a></li>
                         </ul>
                     </nav>
                     <div class="zeroMargin menuBlock">
@@ -143,5 +148,6 @@
         </footer>
     </body>
     <script src="bower/jquery/jquery.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
     <script src="js/main.js"></script>
 </html>

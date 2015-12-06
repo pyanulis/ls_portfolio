@@ -18,6 +18,8 @@
   ],
   "dependencies": {
     "normalize-css": "normalize.css#~3.0.3",
-    "jquery": "1.9"
+    "jquery": "1.9",
+    "modernizr": "2.8.3",
+    "jquery-placeholder": "2.1.3"
   }
 }

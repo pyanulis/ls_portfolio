@@ -37,7 +37,11 @@
     vertical-align: middle;
     display: inline-block;
     color: white;
-    font-family: "ProximaNova-Semibold", sans-serif;
+    font-family: "proxima_nova_cond_semibold", sans-serif;
+}
+
+.no-cssgradients .skillItem{
+    background: #2e8ca2;
 }
 
 .skillsCaption {
