@@ -121,6 +121,10 @@
     padding-bottom: 20px;
 }
 
+.articleClass:last-child {
+    margin-bottom: 40px;
+}
+
 .articleTitle {
     display: table-cell;
     border-bottom: 2px solid #3ba8c0;
@@ -158,9 +162,8 @@
     box-sizing: border-box;
     height: 73px;
     
-    font-family: "fira-sansbook", sans-serif;
+    font-family: "fira_sansbook", sans-serif;
     font-size: 21px;
-    font-weight: normal;
     
     margin: 0;
 }
@@ -238,7 +241,7 @@
     box-sizing: border-box;
     height: 40px;
     
-    font-family: "fira-sansbook", sans-serif;
+    font-family: "fira_sansbook", sans-serif;
     font-size: 17px;
 }
 
@@ -276,7 +279,7 @@
     background-color: #3ba8c0;
     padding-left: 20px;
     
-    font-family: "fira-sansbook", sans-serif;
+    font-family: "fira_sansbook", sans-serif;
     font-size: 21px;
 }
 
@@ -307,23 +310,12 @@
 /*---------------------------------------------- footer ----------------------------------------------*/
 
 .footer {
-	/*width: 100%;
-    min-width: 960px;
-	margin: -80px auto 0;
-	height: 80px;
-	background: #f0f4f7;
-	position: relative;*/
-    text-align: center;
     position: relative;
     margin-top: -83px;
     
     min-width: 960px;
 	height: 80px;
 	background: #f0f4f7;
-    
-   /* border-top-width: 3px;
-    border-top-style: solid;
-    border-top-color: #1c667a;*/
 }
 
 .footer:before {
@@ -371,9 +363,8 @@
 .footerP {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 340px;
     
-    font-size: 13px;
-    font-family: "fira_sanslight", sans-serif;
     color: #4a545d;
 }
 
@@ -407,6 +398,8 @@
 .copyright {
     display: inline-block;
     margin: 0;
+    font-size: 13px;
+    font-family: "fira_sanslight", sans-serif;
 }
 
 .empty-vert-align {

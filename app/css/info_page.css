@@ -5,7 +5,8 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin: 35px 10px 70px 55px;
+    margin: 35px 20px 70px 55px;
+    box-sizing: border-box;
 }
 
 .photo {
@@ -19,12 +20,14 @@
 
 .descrItem {
     font-family: "fira_sansbook", sans-serif;
+    font-size: 15px;
     color: #37424d;
-    margin: 10px 0px;
+    margin: 7px 0px;
 }
 
 .descrCaption {
     font-family: "fira_sansmedium", sans-serif;
+    font-size: 17px;
     margin-right: 20px;
     color: #37424d;
 }
@@ -33,12 +36,14 @@
     border-radius: 2px;
     background-image: linear-gradient(to top, #2e8ca2 50%, #3ba8c0 50%);
     height: 20px;
+    box-sizing: border-box;
     padding: 0px 14px;
     margin: 0px 10px 10px 0px;
     vertical-align: middle;
     display: inline-block;
     color: white;
     font-family: "proxima_nova_cond_semibold", sans-serif;
+    font-size: 13px;
 }
 
 .no-cssgradients .skillItem{
@@ -73,14 +78,14 @@
     margin: 0px;
     padding: 0px;
     vertical-align: text-top;
-    font-family: "fira_sansmedium", sans-serif;
+    font-family: "fira_sansbook", sans-serif;
     color: #37424d;
     font-size: 17px;
 }
 
 .jobDate {
     margin: 0px;
-    font-family: "fira_sansbook", sans-serif;
+    font-family: "fira_sanslight", sans-serif;
     color: #37424d;
     font-size: 15px;
 }
@@ -109,4 +114,9 @@
     background: url("../images/ico_school.png") 30px center no-repeat;
     padding-left: 90px;
     margin-bottom: 10px;
+}
+
+.skillName {
+    vertical-align: middle;
+    margin: 0;
 }

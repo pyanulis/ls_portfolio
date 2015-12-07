@@ -34,7 +34,7 @@
 
 .inputCaption {
     font-family: "fira_sanslight", sans-serif;
-    font-size: 19PX;
+    font-size: 17px;
     color: #959aa8;
 }
 
@@ -148,8 +148,10 @@
     color: white;
     height: 33px;
     widows: 137px;
+    
     font-family: "fira_sansbook", sans-serif;
     font-size: 19px;
+    
     padding-left: 22px;
     padding-right: 22px;
     float: left;
@@ -164,9 +166,11 @@
     background-color: #849db5;
     color: white;
     height: 33px;
-    widows: 137px;
+    width: 137px;
+    
     font-family: "fira_sansbook", sans-serif;
     font-size: 19px;
+    
     padding-left: 22px;
     padding-right: 22px;
     float: right;
