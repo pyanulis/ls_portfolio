@@ -120,3 +120,14 @@
     vertical-align: middle;
     margin: 0;
 }
+
+.work-add-item-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.work-add-item-text {
+    font-family: "fira_sanslight", sans-serif;
+    font-size: 13px;
+    color: #3ba8c0;
+}

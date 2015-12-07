@@ -316,6 +316,8 @@
     min-width: 960px;
 	height: 80px;
 	background: #f0f4f7;
+    
+    text-align: center;
 }
 
 .footer:before {
@@ -363,7 +365,6 @@
 .footerP {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 340px;
     
     color: #4a545d;
 }

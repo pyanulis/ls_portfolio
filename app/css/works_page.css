@@ -96,3 +96,18 @@
     font: 12px "fira_sansbook", sans-serif;
 }
 
+
+.work-add-item-container {
+    display: block;
+    width: 183px;
+    height: 130px;
+    text-align: center;
+    
+    border: 2px dashed #3ba8c0;
+    border-radius: 5px;
+}
+
+.work-add-item-caption {
+    vertical-align: middle;
+    text-align: center;
+}
