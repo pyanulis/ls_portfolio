@@ -39,7 +39,7 @@
 }
 
 .idInput {
-    height: 35px;
+    height: 41px;
     width: 195px;
     box-sizing: border-box;
 }
@@ -102,7 +102,11 @@
 }*/
 
 .formArea {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.formArea:last-child {
+    margin-top: 20px;
 }
 
 .formCapcha {
@@ -112,10 +116,11 @@
 }
 
 .inputCapcha {
-    height: 30px;
+    height: 32px;
     display: inline-block;
     vertical-align: middle;
     line-height: 1.25;
+    box-sizing: border-box;
 }
 
 .imgCapcha {
