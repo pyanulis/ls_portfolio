@@ -21,8 +21,11 @@
     max-width: 183px;
     margin-top: 27px;
     margin-left: 20px;
+    margin-right: 10px;
     vertical-align: top;
 }
+
+
 
 .work-item-image { 
     width: 100%;
@@ -43,7 +46,6 @@
 .work-item-container { 
     position: relative; 
     display: block;
-    width: 183px;
     height: 130px;
     
     border: 2px solid #3ba8c0;
@@ -110,4 +112,97 @@
 .work-add-item-caption {
     vertical-align: middle;
     text-align: center;
+}
+
+#add-project-popup {
+    display: none;
+    background-color: #eff3f7;
+    
+    /*border: 1px solid #48cbe8;*/
+    border-radius: 3px;
+}
+
+.addProjectTitle {
+    height: 44px;
+    border-bottom: 9px solid #67dffa;
+    background-color: #48cbe8;
+    
+    text-align: left;
+}
+
+.h2AddProject {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: "fira_sansregular", sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    
+    float: left;
+    
+    display:-moz-inline-box;
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    zoom:1;
+}
+
+.inputCaption-addProject {
+    font-family: "fira_sansbook", sans-serif;
+    font-size: 17px;
+    color: #959aa8;
+}
+
+.inputMessage-addProject {
+    width: 320px;
+    height: 110px; 
+    box-sizing: border-box;
+    resize: none;
+}
+
+.inputField-addProject {
+    box-sizing: border-box;    
+    width: 320px;
+    height: 42px;
+}
+
+.formAddProject {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.formArea-submitProject {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btnAddProject {
+    background-color: #48cbe8;
+    color: white;
+    height: 33px;
+    widows: 137px;
+    
+    font-family: "fira_sansbook", sans-serif;
+    font-size: 19px;
+    
+    padding-left: 22px;
+    padding-right: 22px;
+    
+    border-radius: 4px;
+    border: 0px;
+    border-bottom: 2px solid #3ba8c0;
+    box-sizing: border-box;
+}
+
+.formArea-addProject {
+    margin-top: 6px;
+}
+
+.icoClose {
+    float: right;
+    vertical-align: middle;
+    margin: auto;
+    margin-right: 5px;
 }

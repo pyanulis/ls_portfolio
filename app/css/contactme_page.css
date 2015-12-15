@@ -1,6 +1,6 @@
 
 .contactMeTitle {
-    height: 122px;
+    min-height: 122px;
     border-bottom: 17px solid #67dffa;
     background-color: #48cbe8;
     
@@ -17,8 +17,13 @@
     font-weight: normal;
     font-family: "fira_sansbook", sans-serif;
     font-size: 27px;
+    
+    display:-moz-inline-box;
+    
     display: inline-block;
     vertical-align: middle;
+    
+    zoom:1;
 }
 
 .formContactMe {
@@ -34,7 +39,7 @@
 
 .inputCaption {
     font-family: "fira_sanslight", sans-serif;
-    font-size: 17px;
+    font-size: 19px;
     color: #959aa8;
 }
 
@@ -45,38 +50,10 @@
 }
 
 .inputMessage {
-    padding: 0;
     width: 100%;
     height: 185px; 
     box-sizing: border-box;
     resize: none;
-}
-
-.inputField {
-    border: 1px solid #48cbe8;
-    border-radius: 3px;
-    color: #48cbe8;
-    font-family: "fira-sanslight", sans-serif;
-    font-size: 13px;
-    padding: 9px;
-}
-
-/*-------------------------------------------------------- input placeholder ----------------------------------------------------*/
-
-.inputField::-webkit-input-placeholder{
-    color: #48cbe8;
-}
-
-.inputField:-moz-placeholder{
-    color: #48cbe8;
-}
-
-.inputField::-moz-placeholder{
-    color: #48cbe8;
-}
-
-.inputField:-ms-input-placeholder{
-    color: #48cbe8;
 }
 
 /*-------------------------------------------------------- input placeholder ----------------------------------------------------*/
@@ -86,21 +63,7 @@
     height: 185px;
 }
 
-/*.inputField .textarea::-webkit-input-placeholder{
-    padding-top: 30px;
-}
 
-.inputField .textarea:-moz-placeholder{
-    padding-top: 30px;
-}
-
-.inputField .textarea::-moz-placeholder{
-    padding-top: 30px;
-}
-
-.inputField .textarea:-ms-input-placeholder{
-    padding-top: 30px;
-}*/
 
 .formArea {
     margin-bottom: 10px;
@@ -147,62 +110,6 @@
 .formValidateArea {
     display: flex;
     justify-content: space-between;
-}
-
-.btnSubmit {
-    background-color: #48cbe8;
-    color: white;
-    height: 33px;
-    widows: 137px;
-    
-    font-family: "fira_sansbook", sans-serif;
-    font-size: 19px;
-    
-    padding-left: 22px;
-    padding-right: 22px;
-    float: left;
-    
-    border-radius: 4px;
-    border: 0px;
-    border-bottom: 2px solid #3ba8c0;
-    box-sizing: border-box;
-}
-
-.btnReset {
-    background-color: #849db5;
-    color: white;
-    height: 33px;
-    width: 137px;
-    
-    font-family: "fira_sansbook", sans-serif;
-    font-size: 19px;
-    
-    padding-left: 22px;
-    padding-right: 22px;
-    float: right;
-    
-    border-radius: 4px;
-    border: none;
-    border-bottom: 2px solid #687b8f;
-    box-sizing: border-box;
-}
-
-.btnReset:hover {
-    border: none;
-}
-
-.btnReset:active {
-    border: none;
-    border-top: 2px solid #687b8f;
-}
-
-.btnSubmit:hover {
-    border: none;
-}
-
-.btnSubmit:active {
-    border: none;
-    border-top: 2px solid #687b8f;
 }
 
 .inpuBlock-name {
