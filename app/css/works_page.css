@@ -123,29 +123,25 @@
 }
 
 .addProjectTitle {
-    height: 44px;
+    height: 100%;
     border-bottom: 9px solid #67dffa;
     background-color: #48cbe8;
     
     text-align: left;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .h2AddProject {
+    margin: 0;
     color: white;
-    text-decoration: none;
-    font-weight: normal;
+    
     font-family: "fira_sansregular", sans-serif;
     font-size: 25px;
-    margin-left: 10px;
+    font-weight: normal;
     
-    float: left;
-    
-    display:-moz-inline-box;
-    
-    display: inline-block;
-    vertical-align: middle;
-    
-    zoom:1;
+    padding-top: 5px;
+    padding-bottom: 2px;
 }
 
 .inputCaption-addProject {
@@ -201,8 +197,93 @@
 }
 
 .icoClose {
-    float: right;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+.h2AddProjectContainer {
+    margin: 0;
+    
+    display: table-cell;
     vertical-align: middle;
-    margin: auto;
-    margin-right: 5px;
+    padding-left: 10px;
+    
+    height: 100%;
+}
+
+.icoCloseContainer {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 70px;
+    height: 100%;
+}
+
+.inputFile {
+    overflow: hidden;
+    opacity: 0;
+    height: 42px;
+    width: 50px;
+}
+
+.lblUpload {   
+    height: 42px;
+    width: 50px;
+    cursor: pointer;
+    
+    background: url("../images/ico_upload.png");
+    background-repeat: no-repeat;
+    
+    vertical-align: middle;
+}
+
+.uploadImageContainer {
+    box-sizing: border-box; 
+    display: inline-block;
+    background-color: #48cbe8;
+    
+    overflow: hidden;
+    
+    height: 42px;
+    width: 50px;
+    
+    vertical-align: middle;
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.inputField-addProjectImage {
+    display: inline-block;
+    box-sizing: border-box;    
+    width: 270px;
+    height: 42px;
+    
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.uploadImage-inputContainer {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    
+    width: 50px;
+    height: 42px;
+    
+    background-image: url("../images/ico_upload.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    height: 42px;
 }

@@ -71,10 +71,7 @@
              --><main class="main">
                     <section class="infoBlock">
                         <article class="articleClass">
-                            <div class="articleTitle">
-                                <span class="empty-vert-align"></span>
-                                <h2 class="content-block-title inner-vert-align">Мои работы</h2>
-                            </div>
+                            <h2 class="content-block-title">Мои работы</h2>
                             <div>
                                 <figure class="zeroMargin work-item">
                                     <a href="http://notmyspace.ru">
@@ -144,32 +141,38 @@
                     </section>
                     <div id="add-project-popup">
                         <div class="addProjectTitle">
-                           <span class="empty-vert-align"></span>
-                           <div class="clearfix inner-vert-align ">
-                                <h2 class="zeroMargin h2AddProject">Добавление проекта</h2>
-                                <img src="images/ico_close_popup.png" alt="close" class="icoClose">
-                           </div>
+                            <div class="h2AddProjectContainer">
+                                <h2 class="h2AddProject">Добавление проекта</h2>
+                            </div>
+                            <div class="icoCloseContainer">
+                                <img src="images/ico_close_popup.png" alt="close popup" class="icoClose">
+                            </div>
                         </div>
                         <form class="formAddProject">
-                          <div class="formArea-addProject">
-                             <p class="zeroMargin inputCaption-addProject">Название проекта</p>
-                              <input type="text" placeholder="Введите название" class="inputField inputField-addProject" />
-                          </div>
-                          <div class="formArea-addProject">
-                             <p class="zeroMargin inputCaption-addProject">Картинка проекта</p>
-                              <input type="email" placeholder="Загрузите изображение" qtip-content="no text" class="inputField inputField-addProject" />
-                          </div>
-                          <div class="formArea-addProject">
-                             <p class="zeroMargin inputCaption-addProject">URL проекта</p>
-                              <input type="email" placeholder="Добавьте ссылку" qtip-content="no text" class="inputField inputField-addProject" />
-                          </div>
-                          <div class="formArea-addProject">
-                             <p class="zeroMargin inputCaption-addProject">Описание</p>
-                              <textarea placeholder="Пара слов о Вашем проекте" class="inputField inputMessage-addProject" ></textarea>
-                          </div>
-                          <div class="formArea-submitProject">
-                              <input type="submit" class="btnAction btnSubmit btnAddProject" value="Добавить"/>
-                          </div>
+                            <div class="formArea-addProject">
+                                <p class="zeroMargin inputCaption-addProject">Название проекта</p>
+                                <input type="text" placeholder="Введите название" class="inputField inputField-addProject" required />
+                            </div>
+                            <div class="formArea-addProject">
+                                <p class="zeroMargin inputCaption-addProject">Картинка проекта</p>
+                                <input id="imageFilePath" type="text" placeholder="Загрузите изображение" qtip-content="no text" class="inputField inputField-addProjectImage" required /><!--
+                             --><div class="uploadImageContainer">
+                                    <div class="uploadImage-inputContainer">
+                                        <input id="imageUpload" type="file" class="upload">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formArea-addProject">
+                                <p class="zeroMargin inputCaption-addProject">URL проекта</p>
+                                <input type="text" placeholder="Добавьте ссылку" qtip-content="no text" class="inputField inputField-addProject" required/>
+                            </div>
+                            <div class="formArea-addProject">
+                                <p class="zeroMargin inputCaption-addProject">Описание</p>
+                                <textarea placeholder="Пара слов о Вашем проекте" class="inputField inputMessage-addProject" ></textarea>
+                            </div>
+                            <div class="formArea-submitProject">
+                                <input type="submit" class="btnAction btnSubmit btnAddProject" value="Добавить"/>
+                            </div>
                         </form>
                     </div> <!--popup-->
                 </main>
