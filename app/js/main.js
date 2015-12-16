@@ -5,21 +5,32 @@ $(document).ready(function(){
         $("input, textarea").placeholder();
     }
     
+    mainModule.init();
+});
+
+var mainModule = (function(){
+    
     var errorClassName = "inputError";
     var formAddProject = $("#formAddProjectId");
+    var formContactMe = $("#formContactMeId");
     var validateFailed = false;
+    
     var addProjectFilter = "input[name=projectTitle], input[name=projectImagePath], input[name=projectUrl], textarea[name=projectDescription]";
+    
+    var sendMessageFilter = "input[name=senderName], input[name=senderEmail], input[name=senderCapcha], textarea[name=senderMessage]";
     
     var inputImage = $("#imageUpload");
     
     var setupListeners = function(){
         $("#add-project-link").on("click", showAddProjectPopup);
         
-        $(".icoClose").on("click", closePopup);
+        //$(".icoClose").on("click", closePopup);
         
         inputImage.on("change", uploadChange);
         
-        formAddProject.on("submit", checkAddProject);
+        formAddProject.on("submit", {filter: addProjectFilter}, checkFormInput);
+        formContactMe.on("submit", {filter: sendMessageFilter}, checkFormInput);
+        formContactMe.on("reset", {filter: sendMessageFilter}, resetForm);
     };
     
     var showAddProjectPopup = function(e){
@@ -72,20 +83,33 @@ $(document).ready(function(){
         inputImagePath.val(file_name);
     };
     
-    var checkAddProject = function(e){
-        console.log("submit add project check");
+    var preventSubmitAddProject = true;
+    
+    var checkFormInput = function(e){
+        
+        if (!preventSubmitAddProject){
+            console.log("submit triggered");
+            
+            preventSubmitAddProject = true;
+            return;   
+        }
+        
+        console.log("submit validation");
         e.preventDefault();
         
         var form = $(this);
         
-        var inputs = form.find(addProjectFilter);
+        console.log(e.data.filter);
+        var inputs = form.find(e.data.filter);
         
+        var success = true;
         inputs.each(function(index){
             
             var item = $(this);
             
             if (!item.val()){
-                console.log(item);
+                
+                success = false;
                 
                 item.addClass(errorClassName);
                 item.on("input", removeErrorClass);
@@ -103,7 +127,31 @@ $(document).ready(function(){
                 
                 item.qtip(tooltipObject);*/
             }
-    });
+        });
+        
+        if (success) {
+            console.log("triggering submit on succeeded validation");
+            
+            preventSubmitAddProject = false;
+            form.trigger("submit");
+        }
+    }
+    
+    var resetForm = function(e){
+        
+        console.log("reset form");
+        
+        var form = $(this);
+        
+        console.log(e.data.filter);
+        var inputs = form.find(e.data.filter);
+        
+        inputs.each(function(index){
+            
+            var item = $(this);
+            
+            clearError(item);
+        });
     }
     
     var removeErrorClass = function(){
@@ -118,5 +166,10 @@ $(document).ready(function(){
         item.off("input", removeErrorClass);
     }
     
-    setupListeners();
-});
+    return {
+        init: function(){
+            setupListeners();
+        }
+    };
+    
+})();

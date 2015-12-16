@@ -75,22 +75,22 @@
                                 <h2 class="h2Contact">У вас интересный проект? Напишите мне.</h2>
                                <span class="empty-vert-align"></span>
                             </div>
-                            <form class="formContactMe">
+                            <form class="formContactMe" id="formContactMeId">
                               <div class="formIdFields formArea">
                                  <div class="clearfix">
                                   <div class="inpuBlock-name">
                                      <p class="zeroMargin inputCaption">Имя</p>
-                                      <input type="text" placeholder="Как к вам обращаться" class="inputField idInput" />
+                                      <input type="text" name="senderName" placeholder="Как к вам обращаться" class="inputField idInput" />
                                   </div>
                                   <div class="inpuBlock-mail">
                                      <p class="zeroMargin inputCaption">Email</p>
-                                      <input type="email" placeholder="Куда мне писать" qtip-content="no text" class="inputField idInput" />
+                                      <input type="email" name="senderEmail" placeholder="Куда мне писать" qtip-content="no text" class="inputField idInput" />
                                   </div>
                                  </div>
                               </div>
                               <div class="formArea">
                                  <p class="zeroMargin inputCaption">Сообщение</p>
-                                  <textarea placeholder="Кратко в чем суть" class="inputField inputMessage" ></textarea>
+                                  <textarea name="senderMessage" placeholder="Кратко в чем суть" class="inputField inputMessage" ></textarea>
                               </div>
                               <div class="formArea">
                                  <p class="zeroMargin inputCaption">Введите код, указанный на картинке</p>
@@ -99,7 +99,7 @@
                                          <img src="images/capcha.png" alt="capcha" class="imgCapcha">
                                      </div>
                                      <div class="capchaInput">
-                                          <input type="text" placeholder="Введите код" class="inputField inputCapcha">
+                                          <input type="text" name="senderCapcha" placeholder="Введите код" class="inputField inputCapcha">
                                      </div>
                                   </div>
                               </div>
