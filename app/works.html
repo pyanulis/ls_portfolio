@@ -148,27 +148,27 @@
                                 <img src="images/ico_close_popup.png" alt="close popup" class="icoClose">
                             </div>
                         </div>
-                        <form class="formAddProject">
+                        <form class="formAddProject" id="formAddProjectId">
                             <div class="formArea-addProject">
                                 <p class="zeroMargin inputCaption-addProject">Название проекта</p>
-                                <input type="text" placeholder="Введите название" class="inputField inputField-addProject" required />
+                                <input type="text" name="projectTitle" placeholder="Введите название" class="inputField inputField-addProject" />
                             </div>
                             <div class="formArea-addProject">
                                 <p class="zeroMargin inputCaption-addProject">Картинка проекта</p>
-                                <input id="imageFilePath" type="text" placeholder="Загрузите изображение" qtip-content="no text" class="inputField inputField-addProjectImage" required /><!--
+                                <input id="imageFilePath" name="projectImagePath" type="text" placeholder="Загрузите изображение" qtip-content="no text" class="inputField inputField-addProjectImage" /><!--
                              --><div class="uploadImageContainer">
                                     <div class="uploadImage-inputContainer">
-                                        <input id="imageUpload" type="file" class="upload">
+                                        <input id="imageUpload" title="image" type="file" class="upload">
                                     </div>
                                 </div>
                             </div>
                             <div class="formArea-addProject">
                                 <p class="zeroMargin inputCaption-addProject">URL проекта</p>
-                                <input type="text" placeholder="Добавьте ссылку" qtip-content="no text" class="inputField inputField-addProject" required/>
+                                <input type="text" name="projectUrl" placeholder="Добавьте ссылку" qtip-content="no text" class="inputField inputField-addProject"/>
                             </div>
                             <div class="formArea-addProject">
                                 <p class="zeroMargin inputCaption-addProject">Описание</p>
-                                <textarea placeholder="Пара слов о Вашем проекте" class="inputField inputMessage-addProject" ></textarea>
+                                <textarea name="projectDescription" placeholder="Пара слов о Вашем проекте" class="inputField inputMessage-addProject" ></textarea>
                             </div>
                             <div class="formArea-submitProject">
                                 <input type="submit" class="btnAction btnSubmit btnAddProject" value="Добавить"/>
@@ -190,5 +190,6 @@
     <script src="bower/jquery/jquery.js"></script>
     <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
     <script src="bower/bPopup/jquery.bpopup.js"></script>
+    <script src="bower/qtip2/jquery.qtip.js"></script>
     <script src="js/main.js"></script>
 </html>

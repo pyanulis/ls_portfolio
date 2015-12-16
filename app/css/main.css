@@ -519,3 +519,10 @@
     border: none;
     border-top: 2px solid #687b8f;
 }
+
+/*------------------------------------------------error styles---------------------------------------------------------*/
+
+.inputError {
+    background-color: #fad2d1;
+    border-color: #f97e76;
+}
