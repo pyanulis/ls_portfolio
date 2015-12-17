@@ -13,7 +13,7 @@
     width: 100%;
 }
 .descriptionInfo {
-    display: inline-block;
+    float: right;
     vertical-align: top;
     padding-top: 10px;
 }
@@ -130,4 +130,8 @@
     font-family: "fira_sanslight", sans-serif;
     font-size: 13px;
     color: #3ba8c0;
+}
+
+.photoContainer {
+    float: left;
 }

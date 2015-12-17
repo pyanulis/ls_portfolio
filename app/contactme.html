@@ -80,17 +80,17 @@
                                  <div class="clearfix">
                                   <div class="inpuBlock-name">
                                      <p class="zeroMargin inputCaption">Имя</p>
-                                      <input type="text" name="senderName" placeholder="Как к вам обращаться" class="inputField idInput" />
+                                      <input type="text" name="senderName" placeholder="Как к вам обращаться" class="inputField idInput" qtip-content="Введите название" qtip-position="left" />
                                   </div>
                                   <div class="inpuBlock-mail">
                                      <p class="zeroMargin inputCaption">Email</p>
-                                      <input type="email" name="senderEmail" placeholder="Куда мне писать" qtip-content="no text" class="inputField idInput" />
+                                      <input type="email" name="senderEmail" placeholder="Куда мне писать" qtip-content="Введите название" qtip-position="right" class="inputField idInput" />
                                   </div>
                                  </div>
                               </div>
                               <div class="formArea">
                                  <p class="zeroMargin inputCaption">Сообщение</p>
-                                  <textarea name="senderMessage" placeholder="Кратко в чем суть" class="inputField inputMessage" ></textarea>
+                                  <textarea name="senderMessage" placeholder="Кратко в чем суть" class="inputField inputMessage" qtip-content="Введите название" qtip-position="left" ></textarea>
                               </div>
                               <div class="formArea">
                                  <p class="zeroMargin inputCaption">Введите код, указанный на картинке</p>
@@ -99,7 +99,7 @@
                                          <img src="images/capcha.png" alt="capcha" class="imgCapcha">
                                      </div>
                                      <div class="capchaInput">
-                                          <input type="text" name="senderCapcha" placeholder="Введите код" class="inputField inputCapcha">
+                                          <input type="text" name="senderCapcha" placeholder="Введите код" class="inputField inputCapcha" qtip-content="Введите название" qtip-position="right">
                                      </div>
                                   </div>
                               </div>
@@ -126,5 +126,6 @@
     </body>
     <script src="bower/jquery/jquery.js"></script>
     <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="bower/qtip2/jquery.qtip.js"></script>
     <script src="js/main.js"></script>
 </html>

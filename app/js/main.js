@@ -103,8 +103,9 @@ var mainModule = (function(){
         var inputs = form.find(e.data.filter);
         
         var success = true;
+        
+        //$.each(inputs, function(index, elem){
         inputs.each(function(index){
-            
             var item = $(this);
             
             if (!item.val()){
@@ -116,18 +117,9 @@ var mainModule = (function(){
                 
                 validateFailed = true;
                 
-                /* doesn't work yet */
-                /*var tooltipObject = {
-                    content: 'I am positioned using corner values!',
-                    show: {
-                        ready: true
-                    }
-                };
-                console.log(tooltipObject);
-                
-                item.qtip(tooltipObject);*/
-            }
-        });
+                createQtip(item);
+            }  
+          });
         
         if (success) {
             console.log("triggering submit on succeeded validation");
@@ -164,6 +156,65 @@ var mainModule = (function(){
     var clearError = function(item){
         item.removeClass(errorClassName);
         item.off("input", removeErrorClass);
+    }
+    
+    var createQtip = function(element){
+        // position init
+        var position = element.attr("qtip-position");
+        
+        console.log(element.attr("qtip-content"));
+        console.log(position);
+        
+        if (position === "right"){
+            
+            console.log("on the right");
+            
+            position = {
+                my: "left center",
+                at: "right center"
+            }
+            
+        }else{
+            
+            position = {
+                my: "left center",
+                at: "right center",
+                adjust: {
+                    method: "shift none"
+                }
+            }
+        }
+        
+        console.log(position);
+        console.log(element[0]);
+        
+        //element init
+        
+        var qtipSettings = {
+            content: {
+                text: function(){
+                    return $(this).attr("qtip-content");
+                }
+            },
+            show: {
+                event: "show"
+            },
+            hide: {
+                event: "keydown hideTooltip"
+            },
+            position: position,
+            style: {
+                classes: "qtip-rounded",
+                tip : {
+                    height: 10,
+                    width: 16
+                }
+            }
+        };
+        
+        console.log(qtipSettings);
+        
+        element.qtip(qtipSettings).trigger("show");
     }
     
     return {
