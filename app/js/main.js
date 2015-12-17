@@ -161,6 +161,7 @@ var mainModule = (function(){
     var createQtip = function(element){
         // position init
         var position = element.attr("qtip-position");
+        var contText = element.attr("qtip-content");
         
         console.log(element.attr("qtip-content"));
         console.log(position);
@@ -192,9 +193,7 @@ var mainModule = (function(){
         
         var qtipSettings = {
             content: {
-                text: function(){
-                    return $(this).attr("qtip-content");
-                }
+                text: contText
             },
             show: {
                 event: "show"
