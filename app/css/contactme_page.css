@@ -29,7 +29,7 @@
 .formContactMe {
     width: 400px;
     margin: 0 auto;
-    padding-top: 44px;
+    padding-top: 38px;
 }
 
 .formIdFields {
@@ -43,6 +43,10 @@
     color: #959aa8;
 }
 
+.inputCaption.labelCapcha {
+    font-size: 17px;
+}
+
 .idInput {
     height: 41px;
     width: 195px;
@@ -51,7 +55,7 @@
 
 .inputMessage {
     width: 100%;
-    height: 185px; 
+    height: 183px; 
     box-sizing: border-box;
     resize: none;
 }
@@ -73,6 +77,10 @@
     margin-top: 20px;
 }
 
+.formArea.formAreaMessage {
+    max-height: 213px;
+}
+
 .formCapcha {
     /*display: flex;
     justify-content: space-between;
@@ -83,7 +91,7 @@
     height: 32px;
     display: inline-block;
     vertical-align: middle;
-    line-height: 1.25;
+    line-height: 1.25em;
     box-sizing: border-box;
 }
 
@@ -92,19 +100,19 @@
     
     display: inline-block;
     vertical-align: middle;
-    line-height: 1.25;
+    line-height: 1.25em;
 }
 
 .capchaContainer {
     border: 1px solid #48cbe8;
     border-radius: 3px;
     background-color: white;
-    height: 80px;
+    height: 76px;
     width: 190px;
     
     float:left;
     text-align: center;
-    line-height: 80px;
+    line-height: 76px;
 }
 
 .formValidateArea {
@@ -118,13 +126,13 @@
     float: left;
 }
 
-.inpuBlock-mail {
+.inputBlock-mail {
     display: inline-block;
-    max-width: 195px;
+    max-width: 191px;
     float: right;
 }
 
 .capchaInput {
     float: right;
-    line-height: 80px;
+    line-height: 72px;
 }

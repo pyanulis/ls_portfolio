@@ -157,7 +157,7 @@
 
 .navigationBlock {
     box-sizing: border-box;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     border-radius: 4px;
 }
 .menuItem {
@@ -268,10 +268,7 @@
     text-decoration: underline;
 }
 
-.contactItem {
-    display: block;
-    height: 40px;
-}
+
 
 .icoContact {
     display: inline-block;
@@ -281,11 +278,15 @@
 }
 
 .contactTitle {
+    margin: 0;
     background-color: #3ba8c0;
     padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 5px;
     
     font-family: "fira_sansbook", sans-serif;
     font-size: 21px;
+    font-weight: normal;
 }
 
 .contactMail {
@@ -368,9 +369,6 @@
 }
 
 .footerP {
-    display: inline-block;
-    vertical-align: middle;
-    
     color: #4a545d;
 }
 
@@ -380,11 +378,7 @@
     vertical-align: middle;
 }
 
-.footer-content-before {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
+
 
 .signin-image {
     background-image: url("../images/sign_in.png");
@@ -437,7 +431,7 @@
 
 .inputField {
     border: 1px solid #48cbe8;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #48cbe8;
     font-family: "fira-sanslight", sans-serif;
     font-size: 13px;
@@ -483,10 +477,10 @@
 
 .btnAction.btnReset {
     background-color: #849db5;
+    border-bottom-color: #687b8f;
     
     float: right;
-    
-    border-bottom-color: #687b8f;
+    width: 125px;
 }
 
 .btnAction.btnSubmit {
@@ -526,3 +520,13 @@
     background-color: #fad2d1;
     border-color: #f97e76;
 }
+
+.qtip-custom {
+    background-color: #f97e76 !important;
+    border-color: #f97e76 !important;
+    color: white !important;
+    
+    font-family: "fira_sansbook", sans-serif;
+    font-size: 13px;
+}
+

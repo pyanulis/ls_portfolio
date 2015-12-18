@@ -13,6 +13,7 @@
         <link href="css/main.css" rel="stylesheet" >
         <link href="css/info_page.css" rel="stylesheet" >
         <link href="css/contactme_page.css" rel="stylesheet" >
+        <link href="bower/qtip2/jquery.qtip.css" rel="stylesheet" >
         <script src="bower/modernizr/modernizr.js"></script>
     </head>
     <body class="body">
@@ -46,9 +47,8 @@
                     </nav>
                     <div class="zeroMargin menuBlock">
                         <ul class="zeroMargin">
-                            <li class="contactItem menuItemFirst contactTitle">
-                                <span class="empty-vert-align"></span>
-                                <p class="zeroMargin inner-vert-align">Контакты</p>
+                            <li class="contactItem menuItemFirst">
+                               <h3 class="contactTitle">Контакты</h3>
                             </li><!--
                          --><li class="contactItem contactMail">
                                 <a class="linkContact" href="mailto:pyanulis@gmail.com">
@@ -79,27 +79,27 @@
                               <div class="formIdFields formArea">
                                  <div class="clearfix">
                                   <div class="inpuBlock-name">
-                                     <p class="zeroMargin inputCaption">Имя</p>
-                                      <input type="text" name="senderName" placeholder="Как к вам обращаться" class="inputField idInput" qtip-content="Введите название" qtip-position="left" />
+                                     <label for="senderName" class="zeroMargin inputCaption">Имя</label>
+                                      <input type="text" id="senderName" name="senderName" placeholder="Как к вам обращаться" class="inputField idInput" qtip-content="Ваше имя" qtip-position="left" />
                                   </div>
-                                  <div class="inpuBlock-mail">
-                                     <p class="zeroMargin inputCaption">Email</p>
-                                      <input type="email" name="senderEmail" placeholder="Куда мне писать" qtip-content="Введите название" qtip-position="right" class="inputField idInput" />
+                                  <div class="inputBlock-mail">
+                                     <label for="senderEmail" class="zeroMargin inputCaption">Email</label>
+                                      <input type="text" id="senderEmail" name="senderEmail" placeholder="Куда мне писать" qtip-content="Ваша почта" qtip-wrongEmailFormat="Неверный формат почты" qtip-position="right" data-inputEmail="true" class="inputField idInput" />
                                   </div>
                                  </div>
                               </div>
-                              <div class="formArea">
-                                 <p class="zeroMargin inputCaption">Сообщение</p>
-                                  <textarea name="senderMessage" placeholder="Кратко в чем суть" class="inputField inputMessage" qtip-content="Введите название" qtip-position="left" ></textarea>
+                              <div class="formArea formAreaMessage">
+                                 <label for="senderMessage" class="zeroMargin inputCaption">Сообщение</label>
+                                  <textarea name="senderMessage" id="senderMessage" placeholder="Кратко в чем суть" class="inputField inputMessage" qtip-content="Ваш вопрос" qtip-position="left" ></textarea>
                               </div>
                               <div class="formArea">
-                                 <p class="zeroMargin inputCaption">Введите код, указанный на картинке</p>
+                                 <label for="senderCapcha" class="zeroMargin inputCaption labelCapcha">Введите код, указанный на картинке</label>
                                   <div class="formCapcha clearfix">
                                      <div class="capchaContainer">
                                          <img src="images/capcha.png" alt="capcha" class="imgCapcha">
                                      </div>
                                      <div class="capchaInput">
-                                          <input type="text" name="senderCapcha" placeholder="Введите код" class="inputField inputCapcha" qtip-content="Введите название" qtip-position="right">
+                                          <input type="text" id="senderCapcha" name="senderCapcha" placeholder="Введите код" class="inputField inputCapcha" qtip-content="Код с картинки" qtip-position="right">
                                      </div>
                                   </div>
                               </div>
@@ -117,8 +117,8 @@
 
         </div> <!--wrapper-->
         <footer class="footer">
-            <span class="footer-content-before"></span>
-            <div class="footerP">
+            <span class="empty-vert-align"></span>
+            <div class="footerP inner-vert-align">
                 <div class="signin-image"></div>
                 <p class="copyright">© 2015 Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
             </div>

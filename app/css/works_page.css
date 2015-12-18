@@ -64,8 +64,8 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: rgb(59, 168, 192); /*ie8*/
-    background-color: rgba(59, 168, 192, 0.5);
+    background-color: rgb(61, 142, 185); /*ie8*/
+    background-color: rgba(61, 142, 185, 0.5);
     text-align: center;
     filter: alpha(opacity=0); 
     
@@ -148,6 +148,7 @@
     font-family: "fira_sansbook", sans-serif;
     font-size: 17px;
     color: #959aa8;
+    display: block;
 }
 
 .inputMessage-addProject {
@@ -286,4 +287,8 @@
     opacity: 0;
     filter: alpha(opacity=0);
     height: 42px;
+}
+
+.emptyLink {
+    text-decoration: none;
 }

@@ -13,7 +13,6 @@ var mainModule = (function(){
     var errorClassName = "inputError";
     var formAddProject = $("#formAddProjectId");
     var formContactMe = $("#formContactMeId");
-    var validateFailed = false;
     
     var addProjectFilter = "input[name=projectTitle], input[name=projectImagePath], input[name=projectUrl], textarea[name=projectDescription]";
     
@@ -40,6 +39,7 @@ var mainModule = (function(){
             onClose: function(){
                         console.log('closed');
                         clearAddProjectForm();
+                        hideAllQTips();
                    }
         });
     };
@@ -49,6 +49,7 @@ var mainModule = (function(){
         e.preventDefault();
         
         clearAddProjectForm();
+        hideAllQTips();
         $("#add-project-popup").bPopup().close();
     };
     
@@ -59,6 +60,10 @@ var mainModule = (function(){
         inputs.each(function(index){
             clearError($(this));
         });
+    }
+    
+    var hideAllQTips = function(){
+        $("[id^=qtip]").hide();
     }
     
     var uploadChange = function(){
@@ -73,7 +78,7 @@ var mainModule = (function(){
         if(file_api && inputImage[0].files[0]) 
             file_name = inputImage[0].files[0].name;
         else
-            file_name = inputImage.val();
+            file_name = inputImage.val().replace("C:\\fakepath\\","");
 
         console.log(file_name);
         
@@ -115,9 +120,12 @@ var mainModule = (function(){
                 item.addClass(errorClassName);
                 item.on("input", removeErrorClass);
                 
-                validateFailed = true;
+                createQtip(item, "qtip-content");
+            }else if(item.attr("data-inputEmail") === "true" && !checkEmailFormat(item.val())){
                 
-                createQtip(item);
+                item.addClass(errorClassName);
+                item.on("input", removeErrorClass);
+                createQtip(item, "qtip-wrongEmailFormat");
             }  
           });
         
@@ -132,6 +140,8 @@ var mainModule = (function(){
     var resetForm = function(e){
         
         console.log("reset form");
+        
+        hideAllQTips();
         
         var form = $(this);
         
@@ -158,17 +168,12 @@ var mainModule = (function(){
         item.off("input", removeErrorClass);
     }
     
-    var createQtip = function(element){
+    var createQtip = function(element, contentTextAttr){
         // position init
         var position = element.attr("qtip-position");
-        var contText = element.attr("qtip-content");
-        
-        console.log(element.attr("qtip-content"));
-        console.log(position);
+        var contText = element.attr(contentTextAttr);
         
         if (position === "right"){
-            
-            console.log("on the right");
             
             position = {
                 my: "left center",
@@ -178,16 +183,13 @@ var mainModule = (function(){
         }else{
             
             position = {
-                my: "left center",
-                at: "right center",
+                my: "right center",
+                at: "left center",
                 adjust: {
                     method: "shift none"
                 }
             }
         }
-        
-        console.log(position);
-        console.log(element[0]);
         
         //element init
         
@@ -203,7 +205,7 @@ var mainModule = (function(){
             },
             position: position,
             style: {
-                classes: "qtip-rounded",
+                classes: "qtip-custom",
                 tip : {
                     height: 10,
                     width: 16
@@ -211,9 +213,21 @@ var mainModule = (function(){
             }
         };
         
-        console.log(qtipSettings);
-        
         element.qtip(qtipSettings).trigger("show");
+    }
+    
+    var checkEmailFormat = function(email) {
+        
+        var atIndex = email.indexOf("@");
+        //@ symbol must be in the string but not the first
+        var correct = atIndex > 0;
+        
+        console.log("atIndex: " + atIndex);
+        
+        // . must be after @ and not the last
+        correct = correct && email.indexOf(".", atIndex + 1) > -1 && email.indexOf(".", atIndex + 1) < email.length - 1;
+        
+        return correct;
     }
     
     return {

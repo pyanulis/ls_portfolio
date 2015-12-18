@@ -14,6 +14,7 @@
         <link href="css/info_page.css" rel="stylesheet" >
         <link href="css/works_page.css" rel="stylesheet" >
         <link href="css/contactme_page.css" rel="stylesheet" >
+        <link href="bower/qtip2/jquery.qtip.css" rel="stylesheet" >
         <script src="bower/modernizr/modernizr.js"></script>
     </head>
     <body class="body">
@@ -46,9 +47,8 @@
                     </nav>
                     <div class="zeroMargin menuBlock">
                         <ul class="zeroMargin">
-                            <li class="contactItem menuItemFirst contactTitle">
-                                <span class="empty-vert-align"></span>
-                                <p class="zeroMargin inner-vert-align">Контакты</p>
+                            <li class="contactItem menuItemFirst">
+                               <h3 class="contactTitle">Контакты</h3>
                             </li><!--
                          --><li class="contactItem contactMail">
                                 <a class="linkContact" href="mailto:pyanulis@gmail.com">
@@ -126,9 +126,9 @@
                                     <p class="zeroMargin workItemDescr">Мой первый сайт для первого ДЗ</p>
                                 </figure><!--
                              --><figure class="zeroMargin work-item" id="add-project-link">
-                                    <a href="works.html">
+                                    <a href="" class="emptyLink">
                                         <div class="work-add-item-container">
-                                           <spn class="empty-vert-align"></spn>
+                                           <span class="empty-vert-align"></span>
                                             <div class="work-add-item-caption inner-vert-align">
                                                 <img class="work-add-item-image" src="images/ico_add_project.png" alt="add project"/>
                                                 <p class="work-add-item-text">Добавить проект</p>
@@ -150,12 +150,12 @@
                         </div>
                         <form class="formAddProject" id="formAddProjectId">
                             <div class="formArea-addProject">
-                                <p class="zeroMargin inputCaption-addProject">Название проекта</p>
-                                <input type="text" name="projectTitle" placeholder="Введите название" class="inputField inputField-addProject" qtip-content="Введите название" qtip-position="left" />
+                                <label for="projectTitle" class="zeroMargin inputCaption-addProject">Название проекта</label>
+                                <input type="text" id="projectTitle" name="projectTitle" placeholder="Введите название" class="inputField inputField-addProject" qtip-content="Вы не ввели название" qtip-position="left" />
                             </div>
                             <div class="formArea-addProject">
-                                <p class="zeroMargin inputCaption-addProject">Картинка проекта</p>
-                                <input id="imageFilePath" name="projectImagePath" type="text" placeholder="Загрузите изображение" qtip-content="no text" class="inputField inputField-addProjectImage" qtip-content="Введите название" qtip-position="left" /><!--
+                                <label for="imageUpload" class="zeroMargin inputCaption-addProject">Картинка проекта</label>
+                                <input id="imageFilePath" name="projectImagePath" type="text" placeholder="Загрузите изображение"  qtip-content="Вы не указали изображение" class="inputField inputField-addProjectImage" qtip-position="left" /><!--
                              --><div class="uploadImageContainer">
                                     <div class="uploadImage-inputContainer">
                                         <input id="imageUpload" title="image" type="file" class="upload">
@@ -163,12 +163,12 @@
                                 </div>
                             </div>
                             <div class="formArea-addProject">
-                                <p class="zeroMargin inputCaption-addProject">URL проекта</p>
-                                <input type="text" name="projectUrl" placeholder="Добавьте ссылку" qtip-content="no text" class="inputField inputField-addProject" qtip-content="Введите название" qtip-position="left"/>
+                                <label for="projectUrl" class="zeroMargin inputCaption-addProject">URL проекта</label>
+                                <input type="text" id="projectUrl" name="projectUrl" placeholder="Добавьте ссылку" class="inputField inputField-addProject" qtip-content="Вы не адрес проекта" qtip-position="left"/>
                             </div>
                             <div class="formArea-addProject">
-                                <p class="zeroMargin inputCaption-addProject">Описание</p>
-                                <textarea name="projectDescription" placeholder="Пара слов о Вашем проекте" class="inputField inputMessage-addProject" qtip-content="Введите название" qtip-position="left" ></textarea>
+                                <label for="projectDescription" class="zeroMargin inputCaption-addProject">Описание</label>
+                                <textarea name="projectDescription" id="projectDescription" placeholder="Пара слов о Вашем проекте" class="inputField inputMessage-addProject" qtip-content="Расскажите о проекте" qtip-position="left" ></textarea>
                             </div>
                             <div class="formArea-submitProject">
                                 <input type="submit" class="btnAction btnSubmit btnAddProject" value="Добавить"/>
@@ -180,8 +180,8 @@
 
         </div> <!--wrapper-->
         <footer class="footer">
-            <span class="footer-content-before"></span>
-            <div class="footerP">
+            <span class="empty-vert-align"></span>
+            <div class="footerP inner-vert-align">
                 <div class="signin-image"></div>
                 <p class="copyright">© 2015 Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
             </div>
