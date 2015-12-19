@@ -247,7 +247,6 @@
     background-color: #41b9d4;
     display: block;
     box-sizing: border-box;
-    height: 40px;
     
     font-family: "fira_sansbook", sans-serif;
     font-size: 17px;
@@ -259,7 +258,6 @@
     color: inherit;
     vertical-align: middle;
     text-decoration: none;
-    line-height: 8px;
 }
 
 .linkContact:hover {
@@ -284,8 +282,8 @@
     margin: 0;
     background-color: #3ba8c0;
     padding-left: 20px;
-    padding-top: 7px;
-    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 3px;
     
     font-family: "fira_sansbook", sans-serif;
     font-size: 21px;
@@ -310,6 +308,8 @@
 .contactText {
     display: inline-block;
     vertical-align: middle;
+    padding: 6px;
+    margin: 0;
 }
 
 .contactText:hover {

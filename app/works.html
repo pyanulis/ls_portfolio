@@ -47,22 +47,22 @@
                     </nav>
                     <div class="zeroMargin menuBlock">
                         <ul class="zeroMargin">
-                            <li class="contactItem menuItemFirst">
+                            <div class="contactItem menuItemFirst">
                                <h3 class="contactTitle">Контакты</h3>
-                            </li><!--
+                            </div><!--
                          --><li class="contactItem contactMail">
                                 <a class="linkContact" href="mailto:pyanulis@gmail.com">
-                                    <img class="contactImage" src="images/extracts/ico_mail.png" alt="mail"><p class="contactText">pyanulis@gmail.com</p>
+                                    <img class="contactImage" src="images/ico_mail.png" alt="mail"><p class="contactText">pyanulis@gmail.com</p>
                                 </a>
                             </li><!--
                          --><li class="contactItem contactPhone">
                                 <a class="linkContact" href="tel:+79216324228">
-                                    <img class="contactImage" src="images/extracts/ico_phone.png" alt="phone"><p class="contactText">+7-921-632-42-28</p>
+                                    <img class="contactImage" src="images/ico_phone.png" alt="phone"><p class="contactText">+7-921-632-42-28</p>
                                 </a>
                             </li><!--
                          --><li class="contactItem contactSkype menuItemLast">
                                 <a class="linkContact" href="skype:pavel.yanulis?chat">
-                                    <img class="contactImage" src="images/extracts/ico_skype.png" alt="skype"><p class="contactText">pavel.yanulis</p>
+                                    <img class="contactImage" src="images/ico_skype.png" alt="skype"><p class="contactText">pavel.yanulis</p>
                                 </a>
                             </li>
                         </ul>
@@ -151,24 +151,27 @@
                         <form class="formAddProject" id="formAddProjectId">
                             <div class="formArea-addProject">
                                 <label for="projectTitle" class="zeroMargin inputCaption-addProject">Название проекта</label>
-                                <input type="text" id="projectTitle" name="projectTitle" placeholder="Введите название" class="inputField inputField-addProject" qtip-content="Вы не ввели название" qtip-position="left" />
+                                <input type="text" id="projectTitle" name="projectTitle" placeholder="Введите название" class="inputField inputField-addProject" data-qtip-content="Вы не ввели название" data-qtip-position="left" />
                             </div>
                             <div class="formArea-addProject">
                                 <label for="imageUpload" class="zeroMargin inputCaption-addProject">Картинка проекта</label>
-                                <input id="imageFilePath" name="projectImagePath" type="text" placeholder="Загрузите изображение"  qtip-content="Вы не указали изображение" class="inputField inputField-addProjectImage" qtip-position="left" /><!--
+                                <input id="imageFilePath" name="projectImagePath" type="text" placeholder="Загрузите изображение"  data-qtip-content="Вы не указали изображение" class="inputField inputField-addProjectImage" data-qtip-position="left" /><!--
                              --><div class="uploadImageContainer">
                                     <div class="uploadImage-inputContainer">
-                                        <input id="imageUpload" title="image" type="file" class="upload">
+                                        <input id="imageUpload" title="image" type="file" accept="image/jpeg,image/png" class="upload">
                                     </div>
                                 </div>
                             </div>
                             <div class="formArea-addProject">
                                 <label for="projectUrl" class="zeroMargin inputCaption-addProject">URL проекта</label>
-                                <input type="text" id="projectUrl" name="projectUrl" placeholder="Добавьте ссылку" class="inputField inputField-addProject" qtip-content="Вы не адрес проекта" qtip-position="left"/>
+                                <input type="text" id="projectUrl" name="projectUrl" placeholder="Добавьте ссылку" class="inputField inputField-addProject" data-qtip-content="Вы не адрес проекта" data-qtip-position="left"/>
                             </div>
                             <div class="formArea-addProject">
-                                <label for="projectDescription" class="zeroMargin inputCaption-addProject">Описание</label>
-                                <textarea name="projectDescription" id="projectDescription" placeholder="Пара слов о Вашем проекте" class="inputField inputMessage-addProject" qtip-content="Расскажите о проекте" qtip-position="left" ></textarea>
+                               <div class="addProject-descrLabel-container">
+                                <label for="projectDescription" class="zeroMargin inputCaption-addProject addProject-descrLabel">Описание</label>
+                                <div class="symbolNumber"><span id="addProjectSymbolNumber">(&lt)</span></div>
+                               </div>
+                                <textarea name="projectDescription" id="projectDescription" placeholder="Пара слов о Вашем проекте" class="inputField inputMessage-addProject" data-qtip-content="Расскажите о проекте" data-qtip-position="left" ></textarea>
                             </div>
                             <div class="formArea-submitProject">
                                 <input type="submit" class="btnAction btnSubmit btnAddProject" value="Добавить"/>
@@ -186,10 +189,12 @@
                 <p class="copyright">© 2015 Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
             </div>
         </footer>
+        <script src="bower/jquery/jquery.js"></script>
+        <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+        <script src="bower/bPopup/jquery.bpopup.js"></script>
+        <script src="bower/qtip2/jquery.qtip.js"></script>
+        <script src="js/descrCheck.js"></script>
+        <script src="js/validator.js"></script>
+        <script src="js/main.js"></script>
     </body>
-    <script src="bower/jquery/jquery.js"></script>
-    <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
-    <script src="bower/bPopup/jquery.bpopup.js"></script>
-    <script src="bower/qtip2/jquery.qtip.js"></script>
-    <script src="js/main.js"></script>
 </html>

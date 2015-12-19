@@ -47,22 +47,22 @@
                     </nav>
                     <div class="zeroMargin menuBlock">
                         <ul class="zeroMargin">
-                            <li class="contactItem menuItemFirst">
+                            <div class="contactItem menuItemFirst">
                                <h3 class="contactTitle">Контакты</h3>
-                            </li><!--
+                            </div><!--
                          --><li class="contactItem contactMail">
                                 <a class="linkContact" href="mailto:pyanulis@gmail.com">
-                                    <img class="contactImage" src="images/extracts/ico_mail.png" alt="mail"><p class="contactText">pyanulis@gmail.com</p>
+                                    <img class="contactImage" src="images/ico_mail.png" alt="mail"><p class="contactText">pyanulis@gmail.com</p>
                                 </a>
                             </li><!--
                          --><li class="contactItem contactPhone">
                                 <a class="linkContact" href="tel:+79216324228">
-                                    <img class="contactImage" src="images/extracts/ico_phone.png" alt="phone"><p class="contactText">+7-921-632-42-28</p>
+                                    <img class="contactImage" src="images/ico_phone.png" alt="phone"><p class="contactText">+7-921-632-42-28</p>
                                 </a>
                             </li><!--
                          --><li class="contactItem contactSkype menuItemLast">
                                 <a class="linkContact" href="skype:pavel.yanulis?chat">
-                                    <img class="contactImage" src="images/extracts/ico_skype.png" alt="skype"><p class="contactText">pavel.yanulis</p>
+                                    <img class="contactImage" src="images/ico_skype.png" alt="skype"><p class="contactText">pavel.yanulis</p>
                                 </a>
                             </li>
                         </ul>
@@ -80,17 +80,17 @@
                                  <div class="clearfix">
                                   <div class="inpuBlock-name">
                                      <label for="senderName" class="zeroMargin inputCaption">Имя</label>
-                                      <input type="text" id="senderName" name="senderName" placeholder="Как к вам обращаться" class="inputField idInput" qtip-content="Ваше имя" qtip-position="left" />
+                                      <input type="text" id="senderName" name="senderName" placeholder="Как к вам обращаться" class="inputField idInput" data-qtip-content="Ваше имя" data-qtip-position="left" />
                                   </div>
                                   <div class="inputBlock-mail">
                                      <label for="senderEmail" class="zeroMargin inputCaption">Email</label>
-                                      <input type="text" id="senderEmail" name="senderEmail" placeholder="Куда мне писать" qtip-content="Ваша почта" qtip-wrongEmailFormat="Неверный формат почты" qtip-position="right" data-inputEmail="true" class="inputField idInput" />
+                                      <input type="text" id="senderEmail" name="senderEmail" placeholder="Куда мне писать" data-qtip-content="Ваша почта" data-qtip-wrongEmailFormat="Неверный формат почты" data-qtip-position="right" data-inputEmail="true" class="inputField idInput" />
                                   </div>
                                  </div>
                               </div>
                               <div class="formArea formAreaMessage">
                                  <label for="senderMessage" class="zeroMargin inputCaption">Сообщение</label>
-                                  <textarea name="senderMessage" id="senderMessage" placeholder="Кратко в чем суть" class="inputField inputMessage" qtip-content="Ваш вопрос" qtip-position="left" ></textarea>
+                                  <textarea name="senderMessage" id="senderMessage" placeholder="Кратко в чем суть" class="inputField inputMessage" data-qtip-content="Ваш вопрос" data-qtip-position="left" ></textarea>
                               </div>
                               <div class="formArea">
                                  <label for="senderCapcha" class="zeroMargin inputCaption labelCapcha">Введите код, указанный на картинке</label>
@@ -99,7 +99,7 @@
                                          <img src="images/capcha.png" alt="capcha" class="imgCapcha">
                                      </div>
                                      <div class="capchaInput">
-                                          <input type="text" id="senderCapcha" name="senderCapcha" placeholder="Введите код" class="inputField inputCapcha" qtip-content="Код с картинки" qtip-position="right">
+                                          <input type="text" id="senderCapcha" name="senderCapcha" placeholder="Введите код" class="inputField inputCapcha" data-qtip-content="Код с картинки" data-qtip-position="right">
                                      </div>
                                   </div>
                               </div>
@@ -123,9 +123,11 @@
                 <p class="copyright">© 2015 Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
             </div>
         </footer>
+        <script src="bower/jquery/jquery.js"></script>
+        <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+        <script src="bower/qtip2/jquery.qtip.js"></script>
+        <script src="js/descrCheck.js"></script>
+        <script src="js/validator.js"></script>
+        <script src="js/main.js"></script>
     </body>
-    <script src="bower/jquery/jquery.js"></script>
-    <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
-    <script src="bower/qtip2/jquery.qtip.js"></script>
-    <script src="js/main.js"></script>
 </html>

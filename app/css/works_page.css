@@ -151,6 +151,10 @@
     display: block;
 }
 
+.inputCaption-addProject.addProject-descrLabel {
+    display: inline-block;
+}
+
 .inputMessage-addProject {
     width: 320px;
     height: 110px; 
@@ -291,4 +295,12 @@
 
 .emptyLink {
     text-decoration: none;
+}
+
+.symbolNumber {
+    font-family: "fira_sansbook", sans-serif;
+    font-size: 11px;
+    color: #959aa8;
+    display: inline-block;
+    vertical-align: middle;
 }
