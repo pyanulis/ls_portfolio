@@ -165,7 +165,6 @@
     background-color: #f0f4f7;
     display: block;
     box-sizing: border-box;
-    height: 73px;
     
     font-family: "fira_sansbook", sans-serif;
     font-size: 21px;
@@ -212,9 +211,13 @@
     margin: auto 10px;
     box-sizing: border-box;
     
-    padding: 20px 0px 20px 18px;
+    padding: 19px 18px 19px 18px;
     
     border-top: 2px solid #3ba8c0;
+}
+
+.menuItemSelected .link {   
+    padding: 18px 5px 18px 18px;
 }
 .link:link {
     text-decoration: none;
@@ -319,7 +322,7 @@
     position: relative;
     margin-top: -83px;
     
-    min-width: 960px;
+    min-width: 1200px;
 	height: 80px;
 	background: #f0f4f7;
     
@@ -370,6 +373,10 @@
 
 .footerP {
     color: #4a545d;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    vertical-align: middle;
 }
 
 .contactImage {
@@ -389,6 +396,10 @@
     margin-right: 230px;
     vertical-align: middle;
     cursor: pointer;
+    
+    /*margin-left: 160px;
+    display: inline-block;
+    line-height: 1.2;*/
 }
 
 .signin-image:hover {
@@ -400,6 +411,8 @@
     margin: 0;
     font-size: 13px;
     font-family: "fira_sanslight", sans-serif;
+    vertical-align: middle;
+    margin-right: 250px;
 }
 
 .empty-vert-align {
@@ -530,3 +543,11 @@
     font-size: 13px;
 }
 
+
+.footerText {
+    /*line-height: 1.2;
+    text-align: center;
+    margin-left: 95px;
+    display: inline-block;
+    vertical-align: middle;*/
+}
