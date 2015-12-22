@@ -102,13 +102,11 @@
 }
 
 .aside {
-    /*display: inline-block;*/
     width: 250px;
     float: left;
 }
 
 .main {
-    /*display: inline-block;*/
     float: right;
     vertical-align: top;
     padding-left: 60px;
